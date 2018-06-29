@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:websocket="http://www.springframework.org/schema/websocket"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+		http://www.springframework.org/schema/websocket http://www.springframework.org/schema/websocket/spring-websocket-4.3.xsd
+	">
+	
+	<context:component-scan base-package="com.daol.oms"/>
+	
+	<mvc:annotation-driven>
+		<mvc:argument-resolvers>
+			<bean class="com.daol.oms.core.json.JsonArgumentResolver"></bean>
+		</mvc:argument-resolvers>
+	</mvc:annotation-driven>
+	
+	<mvc:default-servlet-handler/>
+	
+	<!-- 속성 파일 정의  -->
+	<context:property-placeholder location="classpath:daol.properties"/>
+
+	<!-- ViewResolver -->
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<property name="order" value="0"/>
+	</bean>
+	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="order" value="1"/>
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+		<property name="prefix" value="/WEB-INF/views/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+
+	<!-- View -->
+	<bean id="jsonView" class="com.daol.oms.core.view.DaolJsonView">
+		<property name="contentType" value="application/json;charset=UTF-8"/>
+	</bean>
+	<bean id="imageDownView" class="com.daol.oms.core.view.DaolImageDownView"/>
+
+	<!-- DataSource 설정 -->
+	<bean id="daolDataSourceSpied" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="${jndi.oms.datasource}" />
+		<property name="resourceRef" value="true" />
+	</bean>
+	<!-- log4jdbc 적용 -->
+	<bean id="daolDataSource" class="net.sf.log4jdbc.Log4jdbcProxyDataSource">
+		<constructor-arg ref="daolDataSourceSpied" />
+		<property name="logFormatter">
+			<bean class="net.sf.log4jdbc.tools.Log4JdbcCustomFormatter">
+				<property name="loggingType" value="MULTI_LINE" />
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- Mybatis SqlSessionFactory 빈을 생성한다. Mybatis에서 사용할 매퍼 XML의 경로를 설정한다. -->
+	<bean id="sqlSessionFactory" class="com.daol.oms.core.mybatis.RefreshableSqlSessionFactoryBean">
+		<property name="dataSource" ref="daolDataSource" />
+		<property name="configLocation" value="classpath:/mybatis-config.xml" />
+		<property name="mapperLocations" value="classpath:/com/daol/oms/**/service/*.xml" />
+	</bean>
+
+	<!-- SqlSession 빈을 생성한다. -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+	
+	<!-- AOP설정  -->
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+	<aop:config>
+		<aop:pointcut id="transactionMethod" expression="execution(* com.daol.oms..service.*Service.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="transactionMethod"/>
+	</aop:config>
+
+	<!-- 트랜잭션 매니저 빈을 생성한다. -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="daolDataSource" />
+	</bean>
+
+	<!-- Transaction Declare -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="save*" propagation="REQUIRED" rollback-for="Exception"/>
+			<tx:method name="insert*" propagation="REQUIRED" rollback-for="Exception"/>
+			<tx:method name="update*" propagation="REQUIRED" rollback-for="Exception"/>
+			<tx:method name="delete*" propagation="REQUIRED" rollback-for="Exception"/>
+			<tx:method name="execute*" propagation="REQUIRED" rollback-for="Exception"/>
+			<tx:method name="proc*" propagation="REQUIRED" rollback-for="Exception"/>
+			<tx:method name="select*" read-only="true"/>
+			<tx:method name="search*" read-only="true"/>
+			<tx:method name="get*" read-only="true"/>
+		</tx:attributes>
+	</tx:advice>
+
+	<!-- Message 및 Locale -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>classpath:messages/message</value>
+				<value>classpath:messages/label</value>
+			</list>
+		</property>
+		<property name="defaultEncoding" value="UTF-8"/>
+	</bean>
+	<bean id="messageSourceAccessor" class="org.springframework.context.support.MessageSourceAccessor">
+		<constructor-arg>
+			<ref bean="messageSource"/>
+		</constructor-arg>
+	</bean>
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="ko"/>
+	</bean>
+
+	<!-- EXCEPTION DEFINITION -->
+	<bean id="exceptionMapping" class="com.daol.oms.core.exception.DaolExceptionResolver" />
+
+	<!-- 권한체크 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/co/*" />
+			<bean class="com.daol.oms.core.interceptor.VerifyPermissionInterceptor">
+				<property name="ignoreUrl">
+					<list>
+  						<value>/co/procLogin</value>
+						<value>/co/procLogout</value>
+						<value>/co/searchUserId</value>
+						<value>/co/searchUserPW</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<!-- multipart resolver 설정 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- maximum file size in bytes 50MB -->
+		<property name="maxUploadSize" value="52428800"/>
+	</bean>
+
+	<!-- 스케쥴러 어노테이션 -->
+	<task:annotation-driven />
+<!-- 	<task:scheduler id="daolScheduler" pool-size="10"/> -->
+</beans>

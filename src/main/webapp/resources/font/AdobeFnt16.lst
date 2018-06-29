@@ -1,0 +1,444 @@
+%!Adobe-FontList 1.16
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-brands-400.eot
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-brands-400.svg
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FontAwesome5BrandsRegular
+FamilyName:Font Awesome 5 Brands
+StyleName:Regular
+FullName:Font Awesome 5 Brands Regular
+MenuName:Font Awesome 5 Brands
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-brands-400.ttf
+DataFormat:sfntData
+FileLength:111384
+FileModTime:1525932232
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Font Awesome 5 Brands Regular
+NameArray:0,Win,1,Font Awesome 5 Brands
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-brands-400.woff
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-brands-400.woff2
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-regular-400.eot
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-regular-400.svg
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FontAwesome5FreeRegular
+FamilyName:Font Awesome 5 Free
+StyleName:Regular
+FullName:Font Awesome 5 Free Regular
+MenuName:Font Awesome 5 Free
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-regular-400.ttf
+DataFormat:sfntData
+FileLength:31044
+FileModTime:1525932232
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Font Awesome 5 Free Regular
+NameArray:0,Win,1,Font Awesome 5 Free
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-regular-400.woff
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-regular-400.woff2
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-solid-900.eot
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-solid-900.svg
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FontAwesome5FreeSolid
+FamilyName:Font Awesome 5 Free
+StyleName:Solid
+FullName:Font Awesome 5 Free Solid
+MenuName:Font Awesome 5 Free
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-solid-900.ttf
+DataFormat:sfntData
+FileLength:132920
+FileModTime:1525932232
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Font Awesome 5 Free Solid
+NameArray:0,Win,1,Font Awesome 5 Free
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-solid-900.woff
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\webfonts\fa-solid-900.woff2
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\fa-brands.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\fa-regular.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\fa-solid.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\fontawesome.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_animated.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_bordered-pulled.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_core.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_fixed-width.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_icons.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_larger.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_list.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_mixins.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_rotated-flipped.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_screen-reader.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_stacked.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\scss\_variables.scss
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\fa-brands.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\fa-regular.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\fa-solid.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\fontawesome.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_animated.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_bordered-pulled.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_core.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_fixed-width.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_icons.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_larger.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_list.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_mixins.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_rotated-flipped.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_screen-reader.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_stacked.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\less\_variables.less
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fa-brands.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fa-brands.min.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fa-regular.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fa-regular.min.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fa-solid.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fa-solid.min.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fontawesome-all.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fontawesome-all.min.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fontawesome.css
+FileModTime:1525932232
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\★ 최정일 작업\★★ 쇼핑몰\★수정\shopMain\Font\css\fontawesome.min.css
+FileModTime:1525932232
+%EndFont
+

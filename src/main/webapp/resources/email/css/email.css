@@ -1,0 +1,96 @@
+/* 공통 css */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Noto Sans KR',"나눔고딕","NanumGothic";
+    font-size: 14px;
+    color:#575656;
+    line-height: 35px;
+    letter-spacing: 0.05px;
+    width:100%;
+    height:100%;
+}
+header, section, nav, article, footer { 
+    display:block;
+}
+ul, li {
+    list-style: none;
+}
+a:link {
+    display:block;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    width:100%;
+    height:100%
+}
+.floatL {
+    clear: both;
+  }
+
+  /* 본문 */
+.section_wrap {
+    width:650px;
+    height:auto;
+    background: #fff;
+    border:1px solid #e6e6e6;
+    box-sizing: border-box;
+    margin:0 auto;
+}
+.sectionTitle {
+    font-family: Georgia;
+    color:#fff;
+    font-size: 35px;
+    padding:30px;
+    background: #2f4e85;
+    letter-spacing: 1px;
+}
+.sectionContent {
+    padding:0px 30px;
+}
+.sectionContent>ul>li:nth-child(1) {
+    font-size: 20px;
+    font-weight: 600;
+    padding:30px 0px;
+}
+.sectionContent>ul>li:nth-child(2) {
+    letter-spacing: 0.5px;
+}
+.sectionContent>ul>li:nth-child(3) {
+    background: #f2f2f2;
+    letter-spacing: 0.5px;
+    padding:20px;
+    margin-top:20px;
+}
+.sectionContent>ul>li:nth-child(4) {
+    margin-top:15px;
+}
+.sectionContent>ul>li:nth-child(5) {
+}
+.sectionContent>ul>li:nth-child(7) {
+    margin:15px 0px;
+    font-size: 12px;
+    line-height: 22px;
+    color:#949393;
+
+}
+.sectionBtn>a {
+    font-size: 15px;
+    line-height: 40px;
+    width:214px;
+    height:44px;
+    border:1px solid #5066aa;
+    background: #5066aa;
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+    margin-left:180px;
+    margin-top:20px;
+}

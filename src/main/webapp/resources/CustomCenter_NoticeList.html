@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>메인페이지</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="font/css/fontawesome-all.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/CustomCenter.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+// 상단 슬라이더
+$(document).ready(function(){
+    $('.TopSilde').bxSlider({
+        auto: true,
+        pause: 2500,
+        autoHover: true,
+        slideWidth:322,
+        pager:false,
+        mode: "vertical"
+
+    });
+    //서브메뉴
+    $('#subMenu .subBtn').on('click', function(e){
+                $('#subMenu').stop().animate({height:600}, 500);
+                $('.subContent').fadeIn();
+            });
+            $('#subMenu').on('mouseleave', function(e){
+                $('#subMenu').stop().animate({height:84}, 500);
+                $('.subContent').fadeOut();
+            });
+    // 맨위로 가기
+    $( window ).scroll( function() {
+        if ( $( this ).scrollTop() > 200 ) {
+            $( '.jcm-top' ).fadeIn();
+        } else {
+            $( '.jcm-top' ).fadeOut();
+        }
+    } );
+    $( '.jcm-top' ).click( function() {
+        $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+        return false;
+    } );
+});
+</script>
+</head>
+<body>
+    <header>
+        <div class="headerLogo_warp">
+            <div class="headerLogo">
+                <ul class="userMenu floatL">
+                    <li><a href="#"><img src="images/main/HeaderLogo/logo.png"></a></li>
+                    <li class="headerMenuSearch_warp">
+                        <input type="text" placeholder="찬물에도 잘녹는 솝베리 천연 세제  딱 3일만  9,900원 !!">
+                        <a href=""#><i class="fas fa-search"></i></a>
+                    </li>
+                    <li>
+                        <div  class="TopSilde">
+                            <div><a href="#"><img src="images/main/HeaderBanner/TopBnannerOne.jpg" style="width:322px;height:110px"></a></div>
+                            <div><a href="#"><img src="images/main/HeaderBanner/TopBnannerTwo.jpg" style="width:322px;height:110px"></a></div>
+                            <div><a href="#"><img src="images/main/HeaderBanner/TopBnannerThree.jpg" style="width:322px;height:110px"></a></div>
+                            <div><a href="#"><img src="images/main/HeaderBanner/TopBnannerFour.jpg" style="width:322px;height:110px"></a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="Menu_warp">
+            <div id="subMenu" class="headerMenu">
+                <ul class="floatL" style="position:relative">
+                    <li class="subBtn"><a href="#"><i class="fas fa-bars"></i>전체 메뉴보기</a></li>
+                    <li class="MenuBar"><a href="#">이벤트</a></li>
+                    <li class="MenuBar"><a href="#">가맹점 신청</a></li>
+                    <li class="MenuBar"><a href="#">고객의소리</a></li>
+                    <li class="MenuBar"><a href="#">공지사항</a></li>
+                    <li class="MenuBar"><a href="#">이용안내</a></li>
+                    <li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/login_off.jpg" onmouseover="this.src='images/main/HeaderMenu/login_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/login_off.jpg'"></a></li>
+                    <li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/cart_off.jpg" onmouseover="this.src='images/main/HeaderMenu/cart_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/cart_off.jpg'"></a></li>
+                    <li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/zzim_off.jpg" onmouseover="this.src='images/main/HeaderMenu/zzim_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/zzim_off.jpg'"></a></li>
+                    <li class="headerMenuMypage">
+                        <a href="#"><img src="images/main/HeaderMenu/my_off.jpg" onmouseover="this.src='images/main/HeaderMenu/my_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/my_off.jpg'"></a>
+<!--마이페이지 서브메뉴--> 
+                        <ul class="MypageSubWarp">
+                            <li><a href="#">상품권등록</a></li>
+                            <li><a href="#">상품권 교환내역</a></li>
+                            <li><a href="#">회원탈퇴</a></li>
+                            <li><a href="#">배송/주문조회</a></li>
+                            <li><a href="#">1:1문의게시판</a></li>
+                            <li><a href="#">나의 관심상품</a></li>
+                        </ul>   
+                    </li>
+<!--서브메뉴 -->   
+                    <li class="subContent">
+                        <ul style="overflow:hidden">
+                            <li class="subContentOne" style="height:250px;">
+                                <p><span class="subMenuTitle">생활용품</span><span class="subContentIcon"><img src="images/main/HeaderMenu/lifeIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>주방용품</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>주방비품</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>청소용품</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>식기류</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>세탁용품</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>화장지 / 생리대</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>구강용품</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>욕실용품</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>생활잡화</span></a>
+                                </p>
+                            </li>
+                            <li class="subContentTwo" style="height:250px;">
+                                <p><span class="subMenuTitle">가구</span><span class="subContentIcon"><img src="images/main/HeaderMenu/furnitureIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>침대</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>책상</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>식탁</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>거실장</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>의자</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>메트리스</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>쇼파</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>티테이블</span></a>
+                                </p>
+                            </li>
+                            <li class="subContentThree" style="height:250px;">
+                                <p><span class="subMenuTitle">뷰티</span><span class="subContentIcon"><img src="images/main/HeaderMenu/beautyIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>미용</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>메이크업</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>향수</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>스킨케어</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>소품</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>남성용품</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>바디&헤어</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>핸드 / 클린징</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>썬크림 / 비비크림</span></a>
+                                </p>
+                            </li>
+                            <li class="subContentFour" style="height:250px;">
+                                <p><span class="subMenuTitle">쥬얼리</span><span class="subContentIcon"><img src="images/main/HeaderMenu/ringIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>반지</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>목걸이</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>발찌</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>귀걸이</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>팔찌</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>브로치</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>시계</span></a>
+                                </p>
+                            </li>
+                            <li class="subContentFive" style="height:250px;">
+                                <p><span class="subMenuTitle">패션의류</span><span class="subContentIcon"><img src="images/main/HeaderMenu/clothingIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>여성의류</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>가방</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>선글라스</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>구두</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>여성핸드백</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>운동화 / 슈즈</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>스포츠의류</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>의류(남여공용)</span></a>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul style="overflow:hidden">
+                            <li class="subContentOne" style="height:200px;">
+                                <p><span class="subMenuTitle">가전</span><span class="subContentIcon"><img src="images/main/HeaderMenu/AppliancesIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>계절가전</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>디지털가전</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>소형가전</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>소품</span></a>
+                                </p>
+                            </li>
+                            <li class="subContentTwo" style="height:200px;">
+                                <p><span class="subMenuTitle">잡화</span><span class="subContentIcon"><img src="images/main/HeaderMenu/stuffIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>여성용잡화</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>남성용잡화</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>스포츠잡화</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>휴대폰용품</span></a>
+                                </p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>기타잡화</span></a>
+                                </p>
+                            </li>
+                            <li class="subContentThree" style="height:200px;">
+                                <p><span class="subMenuTitle">건강관리 용품</span><span class="subContentIcon"><img src="images/main/HeaderMenu/necklaceIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>마사지크림</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>목걸이 / 팔찌</span></a>
+                                </p>
+                            </li>
+                            <li class="subContentFour" style="height:200px;">
+                                <p><span class="subMenuTitle">푸드</span><span class="subContentIcon"><img src="images/main/HeaderMenu/foodIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>건강식품</span></a>
+                                    <span class="subContenline ">|</span>
+                                    <a href="#"><span>기타</span></a>
+                                </p>
+                            </li>
+                            <li class="subContentFive" style="height:200px;">
+                                <p><span class="subMenuTitle">입점대기</span><span class="subContentIcon"><img src="images/main/HeaderMenu/storeIcon.png"></span></p>
+                                <p class="subMenuContent">
+                                    <a href="#"><span>입점준비상품</span></a>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>             
+            </div>
+        </nav>
+    </header>
+    <main>  
+        <div class="CustomBanner" style="background:url(images/CustomCenter/TopImg.jpg) no-repeat center center;"></div>
+<!--탭 메뉴 -->        
+<section class="CustomContainerWarp">
+            <section class="TapMenuWarp">
+                <p class="TapMenuTitle">프리첸몰 고객센터<span class="TapMenuSubText">자주하는질문 또는 이용안내를 천천히 읽어 보시고 문의 부탁드립니다</span></p>
+                <ul class="TapBtnWarp">
+                    <li id="btn_CustomNotice" class="CustomMenu CustomMenuActive" onclick="CustomMenu('CustomNotice')"><img src="images/CustomCenter/TapNoticeBtn.png"></li>
+                    <li id="btn_CustomQuestion" class="CustomMenu" onclick="CustomMenu('CustomQuestion')"><img src="images/CustomCenter/TapQusBtn.png"></li>
+                    <li id="btn_CustomAns" class="CustomMenu" onclick="CustomMenu('CustomAns')"><img src="images/CustomCenter/TapAnsBtn.png"></li>
+                    <li id="btn_CustomUse" class="CustomMenu" onclick="CustomMenu('CustomUse')"><img src="images/CustomCenter/TapUseBtn.png"></li>
+                    <li id="btn_CustomInfo" class="CustomMenu" onclick="CustomMenu('CustomInfo')"><img src="images/CustomCenter/TapInfoBtn.png"></li>
+                </ul>
+            </section>
+<!--공지사항 -->    
+            <section class="CustomNoticeList">
+                <p class="ContentTitle">공지사항</p>
+                <table>
+                        <colgroup>
+                            <col width="15%">
+                            <col width="55%">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>등록일</th>
+                            <th>조회</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>944</td>
+                                <td>후오비에피소드1:새로운 시작 "이벤트3" 당첨자공지</td>
+                                <td>2018/04/30</td>
+                                <td>169</td>
+                            </tr>
+                            <tr>
+                                <td>944</td>
+                                <td>5월 3일 12:00(한국기준)부터 WAN 입금이 가능하며, 5월 4일 12:00(한국기준)부터</td>
+                                <td>2018/04/30</td>
+                                <td>169</td>
+                            </tr>
+                            <tr>
+                                <td>944</td>
+                                <td>DBC, RPX, ONT 입출금 중단 공지</td>
+                                <td>2018/04/30</td>
+                                <td>169</td>
+                            </tr>
+                            <tr>
+                                <td>944</td>
+                                <td>[트론 위크] 저스틴 선의 럭키드로우 당첨자 공지</td>
+                                <td>2018/04/30</td>
+                                <td>169</td>
+                            </tr>
+                            <tr>
+                                <td>944</td>
+                                <td>SmartMesh(SMT) 프로젝트팀의 요청으로 인하여, 후오비 코리아</td>
+                                <td>2018/04/30</td>
+                                <td>169</td>
+                            </tr>
+                            <tr>
+                                <td>944</td>
+                                <td>업데이트되는 내용은 가장 먼저 공지사항을 통해 안내드리겠습니다</td>
+                                <td>2018/04/30</td>
+                                <td>169</td>
+                            </tr>
+                        </tbody>
+                    </table>
+<!--페이징-->                <div class="noticePaging">
+                        <ul class="floatLeft_clear">
+                            <li><a href="javascrip:">맨처음으로</a></li>
+                            <li><a href="javascrip:"><i class="fas fa-angle-left"></i></a></li>
+                            <li>1</li>
+                            <li><a href="javascrip:">2</a></li>
+                            <li><a href="javascrip:">3</a></li>
+                            <li><a href="javascrip:">4</a></li>
+                            <li><a href="javascrip:">5</a></li>
+                            <li><a href="javascrip:">6</a></li>
+                            <li><a href="javascrip:">7</a></li>
+                            <li><a href="javascrip:">8</a></li>
+                            <li><a href="javascrip:">9</a></li>
+                            <li><a href="javascrip:">10</a></li>
+                            <li><a href="javascrip:"><i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="javascrip:">맨끝으로</a></li>
+                        </ul>
+                    </div>
+            </section>
+
+        </section>
+    </main>
+</body>
+</html>
