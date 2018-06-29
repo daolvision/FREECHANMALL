@@ -39,23 +39,23 @@
   background: #e25922;
   }
   .rslides li:nth-child(2) {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background: #21e2c3;
-    }
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: #21e2c3;
+	}
   .rslides li:nth-child(3) {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-      background: #2279e2;
-    }
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+	  background: #2279e2;
+	}
 
 .rslides li:first-child {
   position: relative;

@@ -1,132 +1,132 @@
 /* 상세페이지 -상품평 쓰기 팜업창 */
 .ReviewWriteWarp {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    border:1px solid #d7d6d6;
-    border-top:1px solid #d7d6d6;
-    padding:15px;
-    width:650px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	border:1px solid #d7d6d6;
+	border-top:1px solid #d7d6d6;
+	padding:15px;
+	width:650px;
 }
 .ReviewWriteTop {
-    position: relative;
-    padding:15px;
+	position: relative;
+	padding:15px;
 }
 .ReviewWriteText {
-    color:#545555;
-    font-size: 21.64px;
-    font-weight: 600;
-    letter-spacing: -1px;
+	color:#545555;
+	font-size: 21.64px;
+	font-weight: 600;
+	letter-spacing: -1px;
 }
 .ReviewWriteSubText {
-    font-size: 15px;
-    color: #666767;
-    font-weight: 300;
-    padding-left:15px;
+	font-size: 15px;
+	color: #666767;
+	font-weight: 300;
+	padding-left:15px;
 }
 .ReviewWriteClose i {
-    position: absolute;
-    top:17px;
-    right:10px;
-    font-size: 30px;
-    color:#b6b6b6;
-    transition: all 0.5s ease-in-out;
+	position: absolute;
+	top:17px;
+	right:10px;
+	font-size: 30px;
+	color:#b6b6b6;
+	transition: all 0.5s ease-in-out;
 }
 .ReviewWriteClose i:hover {
-    position: absolute;
-    top:17px;
-    right:10px;
-    font-size: 30px;
-    color:#363636;
+	position: absolute;
+	top:17px;
+	right:10px;
+	font-size: 30px;
+	color:#363636;
 }
 .ReviewWriteTable,
 .ProdectQuestionTable {
-    width:100%;
-    margin-top:10px;
-    border:1px solid #d7d6d6;
+	width:100%;
+	margin-top:10px;
+	border:1px solid #d7d6d6;
 }
 .ReviewWriteTable td {
-    height:45px;
-    border:1px solid #d7d6d6;
-    padding-left:20px;
+	height:45px;
+	border:1px solid #d7d6d6;
+	padding-left:20px;
 }
 .ReviewWriteTitle,
 .ProdectQuestionTitle {
-    background: #f9f9f9;
-    font-size: 15px;
-    font-weight: 400;
-    color: #666767;
+	background: #f9f9f9;
+	font-size: 15px;
+	font-weight: 400;
+	color: #666767;
 }
 .ReviewWriteEvaluation {
-    padding:10px 0px;
+	padding:10px 0px;
 }
 .ReviewWriteEvaluation,
 .ReviewWriteEvaluation>li {
-    float: left;
+	float: left;
 }
 .ReviewWriteEvaluation i {
-    position: relative;
-    top:-3px;
-    font-size: 10px;
+	position: relative;
+	top:-3px;
+	font-size: 10px;
 }
 .ReviewWriteEvaluation input {
-    margin-left:30px;
+	margin-left:30px;
 }
 .ReviewWriteInput>input {
-    font-family: 'Noto Sans KR';
-    width:390px;
-    height:30px;
-    font-size: 13px;
-    font-weight: 400;
-    color: #666767;
-    background: #f3f3f3;
-    border:0;
-    padding-left:20px;
+	font-family: 'Noto Sans KR';
+	width:390px;
+	height:30px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #666767;
+	background: #f3f3f3;
+	border:0;
+	padding-left:20px;
 }
 .ReviewWriteTextarea>textarea {
-    font-family: 'Noto Sans KR';
-    width:390px;
-    height:250px;
-    margin:20px 20px 20px 0px;
-    padding:20px;
-    font-size: 13px;
-    font-weight: 300;
-    color: #666767;
-    border:0;
-    line-height: 20px;
-    letter-spacing: 0.05px;
-    background: #f3f3f3;
+	font-family: 'Noto Sans KR';
+	width:390px;
+	height:250px;
+	margin:20px 20px 20px 0px;
+	padding:20px;
+	font-size: 13px;
+	font-weight: 300;
+	color: #666767;
+	border:0;
+	line-height: 20px;
+	letter-spacing: 0.05px;
+	background: #f3f3f3;
 }
 .ReviewWriteBtnWarp {
-    position: relative;
-    left:50%;
-    margin-left:-120px;
-    display: inline-block;
+	position: relative;
+	left:50%;
+	margin-left:-120px;
+	display: inline-block;
 }
 .ReviewWriteBtn {
-    margin:30px 0px;
-    margin-left:10px;
-    width:120px;
-    height:30px;
-    font-size: 15px;
-    font-weight: 600;
-    color:#fff;
-    background: #414956;
-    border:1px solid #414956;
-    border-radius: 20px;
-    cursor: pointer;
+	margin:30px 0px;
+	margin-left:10px;
+	width:120px;
+	height:30px;
+	font-size: 15px;
+	font-weight: 600;
+	color:#fff;
+	background: #414956;
+	border:1px solid #414956;
+	border-radius: 20px;
+	cursor: pointer;
 }
 .ReviewWriteBtn:hover {
-    background: #fc3c5c;
-    border:1px solid #fc3c5c;
+	background: #fc3c5c;
+	border:1px solid #fc3c5c;
 }
 
 /* 상세페이지 -상품문의 팜업창 */
 
 .ProdectQuestionTitle {
-    padding-left: 30px !important;
+	padding-left: 30px !important;
 }
 .ProdectQuestionRadio {
-    margin-left:20px;
+	margin-left:20px;
 }

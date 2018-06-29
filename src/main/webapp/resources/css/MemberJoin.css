@@ -1,293 +1,293 @@
 
 /* 회원가입 - 1.회원선택*/
 .MemberJoinWarp {
-    width:1200px;
-    height:auto;
-    margin:0 auto;
-    overflow: hidden;
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+	overflow: hidden;
 }
 .MemberJoinOrder {
-    float: left;
-    margin-top:100px;
+	float: left;
+	margin-top:100px;
 }
 .MemberJoinOrder>li {
-    float: left;
+	float: left;
 }
 .MemberJoinOrder>li:nth-child(3) {
-    margin-left:85px;
+	margin-left:85px;
 }
 .MemberJoinOrder>li>img {
-    margin-top:20px;
+	margin-top:20px;
 }
 .MemberSubTitle {
-    float: left;
-    font-size: 33.24px;
-    font-weight: 400;
-    color:#3d3d3e;
-    letter-spacing: -2px;
+	float: left;
+	font-size: 33.24px;
+	font-weight: 400;
+	color:#3d3d3e;
+	letter-spacing: -2px;
   }
   .MemberSubMinTitle {
-    font-size: 17.46px;
-    font-weight: 300;
-    color:#3d3d3e;
-    letter-spacing: 0.05px;
-    padding-left: 24px;
-    margin-top:20px;
+	font-size: 17.46px;
+	font-weight: 300;
+	color:#3d3d3e;
+	letter-spacing: 0.05px;
+	padding-left: 24px;
+	margin-top:20px;
   }
   .MemberJoinSelectBtn {
-      position: relative;
-      float: left;
-      left:50%;
-      margin:20px 0px 80px -420px;
+	  position: relative;
+	  float: left;
+	  left:50%;
+	  margin:20px 0px 80px -420px;
   }
   .MemberJoinSelectBtn>li {
-    float: left;
-    width:385px;
-    height:384px;
+	float: left;
+	width:385px;
+	height:384px;
   }
   .MemberJoinSelectBtn>li:first-child {
-    background: url(../images/MemberJoin/MemberSelectPerson.jpg) no-repeat center center;
+	background: url(../images/MemberJoin/MemberSelectPerson.jpg) no-repeat center center;
   }
   .MemberJoinSelectBtn>li:last-child {
-    background: url(../images/MemberJoin/MemberSelectCompany.jpg) no-repeat center center;
-    margin-left:80px;
+	background: url(../images/MemberJoin/MemberSelectCompany.jpg) no-repeat center center;
+	margin-left:80px;
   }
   .MemberJoinNote>li {
-    margin-top:5px;
+	margin-top:5px;
   }
   .MemberJoinNote>li:first-child {
-    margin-top:20px;
+	margin-top:20px;
 }
   .MemberJoinNote>li:last-child {
-      margin-bottom:100px;
+	  margin-bottom:100px;
   }
   .MemberJoinNoteTitle {
-    font-size: 22px;
+	font-size: 22px;
   }
   .MemberJoinNoteSub {
-    font-weight: 300;
+	font-weight: 300;
 }
 
 /* 회원가입 - 2.약관동의*/
 .MemberAgree {
-    margin:0 auto;
+	margin:0 auto;
 }
 .MemberAgreeTitle {
-    color:#757575;
-    font-size:34px;
-    font-weight: 600;
-    margin-top:80px;
-    text-align: center;
+	color:#757575;
+	font-size:34px;
+	font-weight: 600;
+	margin-top:80px;
+	text-align: center;
 }
 .MemberAgreeSubText {
-    color:#757575;
-    font-size:15px;
-    font-weight: 300;
-    margin:20px 0px 40px 0px;
-    text-align: center;
+	color:#757575;
+	font-size:15px;
+	font-weight: 300;
+	margin:20px 0px 40px 0px;
+	text-align: center;
 }
 .MemberAgreeContents {
-    width:760px;
-    height:410px;
-    color:#757575;
-    font-size:15px;
-    font-weight: 300;
-    line-height: 28px;
-    background: #f7f7f7;
-    padding:30px;
-    margin:0 auto;
+	width:760px;
+	height:410px;
+	color:#757575;
+	font-size:15px;
+	font-weight: 300;
+	line-height: 28px;
+	background: #f7f7f7;
+	padding:30px;
+	margin:0 auto;
 }
 .MemberAgreeText {
-    color:#757575;
-    font-size:13px;
-    font-weight: 500;
-    margin-left:10px;
+	color:#757575;
+	font-size:13px;
+	font-weight: 500;
+	margin-left:10px;
 }
 .CheckboxContents {
-    margin:10px 0px 30px 850px;
+	margin:10px 0px 30px 850px;
 }
 .MemberAgreeBtn {
-    position: relative;
-    float: left;
-    left:50%;
-    margin-left:-200px;
-    margin-bottom:100px;
+	position: relative;
+	float: left;
+	left:50%;
+	margin-left:-200px;
+	margin-bottom:100px;
 }
 .MemberAgreeBtn>li {
-    float: left;
-    width: 176px;
-    height:36px;
-    background: #5997f5;
-    border:1px solid #5997f5;
-    border-radius: 90px;
-    margin-left:30px;
-    transition:all 0.5s ease-in-out;
+	float: left;
+	width: 176px;
+	height:36px;
+	background: #5997f5;
+	border:1px solid #5997f5;
+	border-radius: 90px;
+	margin-left:30px;
+	transition:all 0.5s ease-in-out;
 }
 .MemberAgreeBtn>li:hover {
-    background: #fe365b;
-    border:1px solid #fe365b;
+	background: #fe365b;
+	border:1px solid #fe365b;
 }
 .MemberAgreeBtn>li:last-child {
-    background: #838485;
-    border:1px solid #838485;
+	background: #838485;
+	border:1px solid #838485;
 }
 .MemberAgreeBtn>li>a {
-    color:#fff;
-    font-size:18px;
-    font-weight: 500;
-    text-align: center;
-    padding-top:4px;
+	color:#fff;
+	font-size:18px;
+	font-weight: 500;
+	text-align: center;
+	padding-top:4px;
 }
 
 /* 회원가입 - 3.본인인증*/
 
 .MemberJoinconfirmBtn {
-    position: relative;
-    float: left;
-    left:50%;
-    margin:20px 0px 80px -420px;
+	position: relative;
+	float: left;
+	left:50%;
+	margin:20px 0px 80px -420px;
 }
 .MemberJoinconfirmBtn>li {
-    float: left;
-    width:385px;
-    height:384px;
+	float: left;
+	width:385px;
+	height:384px;
   }
 .MemberJoinconfirmBtn>li:first-child {
-    background: url(../images/MemberJoin/MemberJoinIpin_icon.jpg) no-repeat center center;
+	background: url(../images/MemberJoin/MemberJoinIpin_icon.jpg) no-repeat center center;
 }
 .MemberJoinconfirmBtn>li:last-child {
-    background: url(../images/MemberJoin/MemberJoinHandphone_icon.jpg) no-repeat center center;
-    margin-left:80px;
+	background: url(../images/MemberJoin/MemberJoinHandphone_icon.jpg) no-repeat center center;
+	margin-left:80px;
 }
 
 /* 회원가입 - 4.정보입력*/
 .MemberJoinWarp i {
-    color:#ff6d40;
-    padding-right:10px;
+	color:#ff6d40;
+	padding-right:10px;
 }
 .MemberJoinInfo i {
-    padding-right:20px;
+	padding-right:20px;
 }
 .MemberJoinInfo {
-    width:1200px;
-    border:1px solid #e4e4e4;
-    margin-bottom:30px;
+	width:1200px;
+	border:1px solid #e4e4e4;
+	margin-bottom:30px;
 }
 .MemberJoinInfo tr{
-    height:55px;
+	height:55px;
 }
 .MemberJoinInfo tr>td:first-child {
-    font-family: "나눔고딕","NanumGothic";
-    color: #757575;
-    font-size: 15px;
-    font-weight: 600;
-    background: #f2f2f2;
-    border:1px solid #e4e4e4;
-    padding-left:40px;
+	font-family: "나눔고딕","NanumGothic";
+	color: #757575;
+	font-size: 15px;
+	font-weight: 600;
+	background: #f2f2f2;
+	border:1px solid #e4e4e4;
+	padding-left:40px;
 }
 .MemberJoinInfo tr>td:last-child {
-    border:1px solid #e4e4e4;
+	border:1px solid #e4e4e4;
 }
 .MemberJoinInfo Input {
-    width:330px;
-    height:32px;
-    color: #757575;
-    font-size: 15px;
-    font-weight: 600;
-    padding-left:20px;
-    background: #eeeeee;
-    border:1px solid #eeeeee;
-    margin-left:10px;
-    transition: all 0.5s ease-in-out;
+	width:330px;
+	height:32px;
+	color: #757575;
+	font-size: 15px;
+	font-weight: 600;
+	padding-left:20px;
+	background: #eeeeee;
+	border:1px solid #eeeeee;
+	margin-left:10px;
+	transition: all 0.5s ease-in-out;
 }
 .MemberJoinInfo Input:focus {
-    background: #dfdfdf;
+	background: #dfdfdf;
 }
 .MemberJoinInfoMinText {
-    color: #757575;
-    font-size: 13px;
-    font-weight: 300;
-    padding-left:20px;
+	color: #757575;
+	font-size: 13px;
+	font-weight: 300;
+	padding-left:20px;
 }
 .overlapBtn {
-    position: relative;
-    top:10px;
-    left:20px;
+	position: relative;
+	top:10px;
+	left:20px;
 }
 .overlapBtn>a {
-    display: inline;
+	display: inline;
 }
 .TelInput {
-    width:150px !important;
-    margin-right:10px !important;
+	width:150px !important;
+	margin-right:10px !important;
 }
 .TelInputLine {
-    color: #a8a7a7; 
+	color: #a8a7a7; 
 }
 .ReceiveCharacter {
-    float: left;
-    height:20px;
-    margin:10px 0px 0px 10px;
-    color: #757575;
-    font-size: 13px;
-    font-weight: 300;
+	float: left;
+	height:20px;
+	margin:10px 0px 0px 10px;
+	color: #757575;
+	font-size: 13px;
+	font-weight: 300;
 }
 .ReceiveCharacter>li {
-    float: left;
-    margin-right:20px;
+	float: left;
+	margin-right:20px;
 }
 .ReceiveCharacter>li:nth-child(2),
 .ReceiveCharacter>li:nth-child(3) {
-    position: relative;
-    top:-3px;
+	position: relative;
+	top:-3px;
 }
 .receptionRadio {
-    width:15px !important;
-    height:15px;
+	width:15px !important;
+	height:15px;
 }
 .receptionText {
-    position: relative;
-    top:-11px;
-    padding-left:5px;
+	position: relative;
+	top:-11px;
+	padding-left:5px;
 }
 .ReceiveCharacterText {
-    height:20px;
-    margin:10px 0px 0px 10px;
-    color: #757575;
-    font-size: 13px;
-    font-weight: 300;
+	height:20px;
+	margin:10px 0px 0px 10px;
+	color: #757575;
+	font-size: 13px;
+	font-weight: 300;
 }
 
 /* 회원가입 - 5.회원가입완료*/
 
 .SignedUpImg {
-    position: relative;
-    left: 50%;
-    margin-left:-267px;
-    display: inline-block;
+	position: relative;
+	left: 50%;
+	margin-left:-267px;
+	display: inline-block;
 }
 .SignedUpBtn {
-    position: relative;
-    left:50%;
-    margin:50px 0px 100px -120px;
+	position: relative;
+	left:50%;
+	margin:50px 0px 100px -120px;
 }
 .SignedUpBtn>li {
-    width: 176px;
-    height:36px;
-    background: #5997f5;
-    border:1px solid #5997f5;
-    border-radius: 90px;
-    margin-left:30px;
-    transition:all 0.5s ease-in-out;
+	width: 176px;
+	height:36px;
+	background: #5997f5;
+	border:1px solid #5997f5;
+	border-radius: 90px;
+	margin-left:30px;
+	transition:all 0.5s ease-in-out;
 }
 .SignedUpBtn>li:hover {
-    background: #fe365b;
-    border:1px solid #fe365b;
+	background: #fe365b;
+	border:1px solid #fe365b;
 }
 .SignedUpBtn>li>a {
-    color:#fff;
-    font-size:18px;
-    font-weight: 500;
-    text-align: center;
-    padding-top:4px;
+	color:#fff;
+	font-size:18px;
+	font-weight: 500;
+	text-align: center;
+	padding-top:4px;
 }

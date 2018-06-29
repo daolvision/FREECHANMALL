@@ -1,370 +1,370 @@
 
 /* 본문 - 가로 1200 블럭*/
 .container_warp {
-    position: relative;
-    width:1200px;
-    height:auto;
-    margin:0 auto;
-    overflow: hidden;
+	position: relative;
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+	overflow: hidden;
 }
 
 /* 본문 - 섹션02 - 이달의 추천상품 */
 .Recommend_warp {
-    overflow: hidden;
+	overflow: hidden;
 }
 .Recommend_warp>p {
-    font-size: 32.24px;
-    letter-spacing: -1px;
-    color:#565656;
-    margin: 74px 0px 26px 0px;
+	font-size: 32.24px;
+	letter-spacing: -1px;
+	color:#565656;
+	margin: 74px 0px 26px 0px;
 }
 .Recommend_warp>p>span:nth-child(1) {
-    font-weight: 600;
+	font-weight: 600;
 }
 .Recommend_warp>p>span:nth-child(2) {
-    font-size: 17.5px;
-    font-weight: 300;
-    padding-left:15px;
+	font-size: 17.5px;
+	font-weight: 300;
+	padding-left:15px;
 }
 .RecommendProduct {
-    float: left;
+	float: left;
 }
 .RecommendProduct>li {
-    float: left;
-    width:389px;
-    height:300px;
-    margin-right:16.5px;
+	float: left;
+	width:389px;
+	height:300px;
+	margin-right:16.5px;
 }
 .RecommendProduct>li:nth-child(3),
 .RecommendProduct>li:last-child {
-    margin-right:0px;
+	margin-right:0px;
 }
 .RecommendProduct>li:nth-child(4),
 .RecommendProduct>li:nth-child(5),
 .RecommendProduct>li:nth-child(6) {
-    margin-top:12px;
+	margin-top:12px;
 }
 .RecommendProduct>li>a:hover {
    border:2px solid #f56a1e;
 }
 /* 본문 - 섹션03 - 상품권등록 */
 .Giftcard_warp {
-    position: relative;
-    width:1200PX;
-    height:225px;
-    background: url(../images/main/ContentGiftcard/Giftcard.jpg) no-repeat center center;
-    margin-top:60px;
+	position: relative;
+	width:1200PX;
+	height:225px;
+	background: url(../images/main/ContentGiftcard/Giftcard.jpg) no-repeat center center;
+	margin-top:60px;
 }
 .GiftcardContent {
-    position: absolute;
-    width:472px;
-    height:160px;
-    top:32px;
-    left:655px;
+	position: absolute;
+	width:472px;
+	height:160px;
+	top:32px;
+	left:655px;
 }
 .GiftcardContent p:nth-child(1) {
-    color:#fff;
-    font-size: 32.24px;
-    font-weight: 500;
-    letter-spacing: -1px;
+	color:#fff;
+	font-size: 32.24px;
+	font-weight: 500;
+	letter-spacing: -1px;
 }
 .GiftcardContent p:nth-child(2) {
-    color:#fff;
-    font-size: 17.5px;
-    font-weight: 300;
+	color:#fff;
+	font-size: 17.5px;
+	font-weight: 300;
 }
 .GiftcardInput {
-    width:455px;
-    height:55px;
-    border:2px solid #fff;
-    margin-top:10px;
+	width:455px;
+	height:55px;
+	border:2px solid #fff;
+	margin-top:10px;
 }
 .GiftcardInput>input {
-    width:379px;
-    height:40px;
-    font-size: 17px;
-    color:#fff;
-    letter-spacing: 2px;
-    padding:10px;
-    margin:5px;
-    background: #e59897;
-    border:0;
+	width:379px;
+	height:40px;
+	font-size: 17px;
+	color:#fff;
+	letter-spacing: 2px;
+	padding:10px;
+	margin:5px;
+	background: #e59897;
+	border:0;
 }
 .GiftcardInput>input::placeholder {
-    color:#fde5e5;
-    font-size: 15px;
-    letter-spacing: -0.2px;
+	color:#fde5e5;
+	font-size: 15px;
+	letter-spacing: -0.2px;
 }
 .GiftcardInput a {
-    display: inline;
+	display: inline;
 }
 .EnrollmentBtn {
-    background: #f36160;
-    color:#fff;
-    font-size: 15px;
-    font-weight: 500;
-    padding:14px 16px;
-    vertical-align: middle;
-    border-left:2px solid #fff;
+	background: #f36160;
+	color:#fff;
+	font-size: 15px;
+	font-weight: 500;
+	padding:14px 16px;
+	vertical-align: middle;
+	border-left:2px solid #fff;
 }
 /* 본문 - 섹션 - 서클 배너 슬라이드*/
 .CircleSlide_warp {
-    margin-top:70px;
+	margin-top:70px;
 }
 /* 본문 - 섹션04 - 이달의 인기상품 */
 .Best_warp {
-    overflow: hidden;
+	overflow: hidden;
 }
 .Best_warp>p {
-    font-size: 32.24px;
-    letter-spacing: -1px;
-    color:#565656;
-    margin: 84px 0px 26px 0px;
+	font-size: 32.24px;
+	letter-spacing: -1px;
+	color:#565656;
+	margin: 84px 0px 26px 0px;
 }
 .Best_warp>p>span:nth-child(1) {
-    font-weight: 600;
+	font-weight: 600;
 }
 .Best_warp>p>span:nth-child(2) {
-    font-size: 17.5px;
-    font-weight: 300;
-    padding-left:15px;
+	font-size: 17.5px;
+	font-weight: 300;
+	padding-left:15px;
 }
 .BestContent_left {
-    float: left;
-    overflow: hidden;
+	float: left;
+	overflow: hidden;
 }
 .BestProduct_left {
-    float: left;
+	float: left;
 }
 .BestProduct_left>li {
-    float: left;
-    position: relative;
-    width:298px;
-    height:324px;
-    border:1px solid #cbd4d9;
+	float: left;
+	position: relative;
+	width:298px;
+	height:324px;
+	border:1px solid #cbd4d9;
 }
 
 .BestProduct_left>li:nth-child(2) {
-    border-left:0;
+	border-left:0;
 }
 .BestProduct_left>li:nth-child(3) {
-    clear: both;
-    width:596px;
-    height:324px;
-    border-top:0;
+	clear: both;
+	width:596px;
+	height:324px;
+	border-top:0;
 }
 .BestContent_right {
-    float: left;
-    position: relative;
-    overflow: hidden;
+	float: left;
+	position: relative;
+	overflow: hidden;
 }
 .BestProduct_right>li {
-    position: relative;
-    width:604px;
-    border:1px solid #cbd4d9;
+	position: relative;
+	width:604px;
+	border:1px solid #cbd4d9;
 }
 .BestProduct_right>li:nth-child(1) {
-    border-left:0;
-    height:324px;
+	border-left:0;
+	height:324px;
 }
 .BestProduct_right>li:nth-child(2) {
-    float: left;
-    height:324px;
-    width:302px;
-    border-left:0;
-    border-right:0;
-    border-top:0;
+	float: left;
+	height:324px;
+	width:302px;
+	border-left:0;
+	border-right:0;
+	border-top:0;
 }
 .BestProduct_right>li:nth-child(3) {
-    float: left;
-    height:324px;
-    width:302px;
-    border-left:0;
-    border-top:0;
+	float: left;
+	height:324px;
+	width:302px;
+	border-left:0;
+	border-top:0;
 }
 .BestProduct_right_circle {
-    float: left;
-    width:604px;
+	float: left;
+	width:604px;
 }
 .BestProduct_right_circle>li {
-    float: left;
-    position: relative;
-    height:324px;
-    width:302px;
+	float: left;
+	position: relative;
+	height:324px;
+	width:302px;
 }
 .BestProduct_right_circle>li:nth-child(1) {
-    border-right:1px solid #cbd4d9;
+	border-right:1px solid #cbd4d9;
 }
 .saleIcon {
-    position: absolute;
-    z-index: 10;
-    top:0%;
-    right:8%;
-    width:77px;
-    height:47px;
-    background: url(../images/main/ContentBest/sale_icon.png) no-repeat center center;
+	position: absolute;
+	z-index: 10;
+	top:0%;
+	right:8%;
+	width:77px;
+	height:47px;
+	background: url(../images/main/ContentBest/sale_icon.png) no-repeat center center;
 }
 
 /* 본문 - 섹션05 - 중간 배너 슬라이드*/
 .SubSlide_warp {
-    overflow: hidden;
-    height:330px;
-    margin-top:30px;
+	overflow: hidden;
+	height:330px;
+	margin-top:30px;
 }
 .SubSlide {
-    width:1200px;
-    height:294px;
-    background: url(../images/main/ContentSubSlide/SlideImgOne.jpg) no-repeat;
+	width:1200px;
+	height:294px;
+	background: url(../images/main/ContentSubSlide/SlideImgOne.jpg) no-repeat;
 }
 .SubSlideNavi {
-    position: relative;
-    float: left;
-    width:128px;
-    height:20px;
-    left:50%;
-    margin-left:-54px;
-    margin-top:10px;
+	position: relative;
+	float: left;
+	width:128px;
+	height:20px;
+	left:50%;
+	margin-left:-54px;
+	margin-top:10px;
 }
 .SubSlideNavi>li {
-    float: left;
-    width:16px;
-    height:16px;
-    margin-left: 16px;
-    margin-top:10px;
-    border-radius: 50%;
-    background:#757474;
+	float: left;
+	width:16px;
+	height:16px;
+	margin-left: 16px;
+	margin-top:10px;
+	border-radius: 50%;
+	background:#757474;
 }
 .SubSlideNavi>li:first-child {
-    margin-left: 0px;
+	margin-left: 0px;
 }
 
 /* 본문 - 섹션05 - 전체상품보기 */
 .AllItems_warp {
-    overflow: hidden;
-    margin-bottom:75px;
+	overflow: hidden;
+	margin-bottom:75px;
 }
 .AllItems_warp>p {
-    font-size: 32.24px;
-    letter-spacing: -1px;
-    color:#565656;
-    margin: 44px 0px 26px 0px;
+	font-size: 32.24px;
+	letter-spacing: -1px;
+	color:#565656;
+	margin: 44px 0px 26px 0px;
 }
 .AllItems_warp>p>span:nth-child(1) {
-    font-weight: 600;
+	font-weight: 600;
 }
 .AllItems_warp>p>span:nth-child(2) {
-    font-size: 17.5px;
-    font-weight: 300;
-    padding-left:15px;
+	font-size: 17.5px;
+	font-weight: 300;
+	padding-left:15px;
 }
 .AllItems_content {
-    overflow: hidden;
+	overflow: hidden;
 }
 .AllItems_content div{
-    position: relative;
-    float: left;
-    width:290px;
-    height:456px;
-    border:1px solid #cbd4d9;
-    margin-left:13.33px;
-    margin-top:13.33px;
+	position: relative;
+	float: left;
+	width:290px;
+	height:456px;
+	border:1px solid #cbd4d9;
+	margin-left:13.33px;
+	margin-top:13.33px;
 }
 .AllItems_content div:nth-child(4n+1) {
-    margin-left:0px;
+	margin-left:0px;
 }
 .AllItems_list_img {
-    width:265px;
-    height:265px;
+	width:265px;
+	height:265px;
 }
 .AllItems_product {
-    position: relative;
-    width:286px;
-    margin:0 auto;
+	position: relative;
+	width:286px;
+	margin:0 auto;
 }
 .AllItems_product li {
-    font-family: 'Noto Sans KR';
-    color:#777777;
-    margin:0px 20px;
+	font-family: 'Noto Sans KR';
+	color:#777777;
+	margin:0px 20px;
 }
 .AllItems_product>a:hover {
-    text-decoration:underline;
-    color:#2e2e2e;
+	text-decoration:underline;
+	color:#2e2e2e;
 }
 .AllItems_product>a>li:nth-child(1) {
-    margin:12px 0px 0px 11px;
+	margin:12px 0px 0px 11px;
 }
 .AllItems_product>a>li:nth-child(2) {
-    color:#7a7a7a;
-    height:40px;
+	color:#7a7a7a;
+	height:40px;
 }
 
 .AllItems_product>li:nth-child(2) {
-    margin-top:15px;
-    text-decoration: line-through;
-    color:#898a8a;
+	margin-top:15px;
+	text-decoration: line-through;
+	color:#898a8a;
 }
 .AllItems_product>li:nth-child(3) {
-    font-size:22px;
-    font-weight: 600;
-    color:#ec4d29;
+	font-size:22px;
+	font-weight: 600;
+	color:#ec4d29;
 }
 .ProductList {
-    position: relative;
+	position: relative;
 }
 .PayType_text {
-    margin-top:20px;
+	margin-top:20px;
 }
 .PayType_text>li {
-    float: left;
-    height:16px;
-    line-height: 10px;
-    font-size:12px;
-    font-weight: 400;
-    text-align: center;
+	float: left;
+	height:16px;
+	line-height: 10px;
+	font-size:12px;
+	font-weight: 400;
+	text-align: center;
 }
 .PayType_text>li:nth-child(1) {
-    margin-left:0;
-    margin-right:8px;
-    line-height: 15px;
+	margin-left:0;
+	margin-right:8px;
+	line-height: 15px;
 }
 .PayType_text>li:nth-child(2),
 .PayType_text>li:nth-child(3) {
-    font-family:'Malgun Gothic';
-    font-size:11px;
-    color:#2789c7;
-    margin-left:0px;
-    margin-right:0;
-    padding:2px 8px;
-    border:1px solid #2789c7;
-    letter-spacing: -1px;
+	font-family:'Malgun Gothic';
+	font-size:11px;
+	color:#2789c7;
+	margin-left:0px;
+	margin-right:0;
+	padding:2px 8px;
+	border:1px solid #2789c7;
+	letter-spacing: -1px;
 }
 .PayType_text>li:nth-child(3) {
-    margin-left:3px;
-    color:#fc4b68;
-    border:1px solid #fc4b68;
+	margin-left:3px;
+	color:#fc4b68;
+	border:1px solid #fc4b68;
 }
 .ListZzim_icon {
-    position: absolute;
-    width:27px;
-    height:25px;
-    top:84%;
-    left:80%;
-    background: url(../images/main/ContentAllIteam/ListZzim_icon.svg) no-repeat center center;
+	position: absolute;
+	width:27px;
+	height:25px;
+	top:84%;
+	left:80%;
+	background: url(../images/main/ContentAllIteam/ListZzim_icon.svg) no-repeat center center;
 }
 .ListZzim_icon>a:hover {
 
-    background: url(../images/main/ContentAllIteam/ListZzim_icon_on.svg) no-repeat center center;
+	background: url(../images/main/ContentAllIteam/ListZzim_icon_on.svg) no-repeat center center;
 }
 /* 본문 - 섹션06 - 프리첸 배너 */
 .Freechan_warp {
-    width:100%;
-    height:310px;
-    background: #4ec9cc;
+	width:100%;
+	height:310px;
+	background: #4ec9cc;
 }
 .FreechanBanner {
-    position: relative;
-    width:1200px;
-    top:0;
-    left:50%;
-    margin-left:-600px;
+	position: relative;
+	width:1200px;
+	top:0;
+	left:50%;
+	margin-left:-600px;
 }

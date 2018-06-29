@@ -1,105 +1,105 @@
 
 /* 로그인*/
 .LoginWarp {
-    width:1200px;
-    height:auto;
-    margin:0 auto;
-    overflow: hidden;
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+	overflow: hidden;
 }
 .LoginInfo {
-    float: left;
-    margin-bottom:100px;
+	float: left;
+	margin-bottom:100px;
 }
 .LoginInfo>ul>li {
-    margin-top:10px;
+	margin-top:10px;
 }
 .LoginInfo>ul>li:first-child {
-    margin-top:42px;
+	margin-top:42px;
 }
 .LoginInput {
-    width:470px;
-    height:55px;
-    color:#737373;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    background: #f2f2f2;
-    border:1px solid #f2f2f2;
-    padding-left:20px;
-    box-sizing: border-box;
-    transition: all 0.5s ease-in-out;
+	width:470px;
+	height:55px;
+	color:#737373;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	background: #f2f2f2;
+	border:1px solid #f2f2f2;
+	padding-left:20px;
+	box-sizing: border-box;
+	transition: all 0.5s ease-in-out;
 }
 .LoginInput:focus {
-    border:1px solid #737373;
+	border:1px solid #737373;
 }
 .LoginInput::placeholder {
-    color:#9e9d9d;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: -1px;
+	color:#9e9d9d;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: -1px;
 }
 .LoginBtn {
-    width:470px;
-    height:55px;
-    background: #41cad6;
-    transition: all 0.5s ease-in-out;
+	width:470px;
+	height:55px;
+	background: #41cad6;
+	transition: all 0.5s ease-in-out;
 }
 .LoginBtn:hover {
-    background: #fe365b;
+	background: #fe365b;
 } 
 .LoginBtn>a {
-    color:#fff;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: -1px;
-    padding-top:10px;
+	color:#fff;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 500;
+	letter-spacing: -1px;
+	padding-top:10px;
 }
 .SubText {
-    position: relative;
-    top:-8px;
-    font-weight: 300;
+	position: relative;
+	top:-8px;
+	font-weight: 300;
 }
 .LoginBanner {
-    float: left;
-    margin:20px 0px 0px 40px;
+	float: left;
+	margin:20px 0px 0px 40px;
 
 }
 
 /* 아이디,비밀번호 찾기*/
 .FineID {
-    overflow: hidden;
-    width:600px;
-    float: left;
+	overflow: hidden;
+	width:600px;
+	float: left;
 }
 .FinePw {
-    overflow: hidden;
-    width:599px;
-    border-left:1px solid #dfe0e0;
+	overflow: hidden;
+	width:599px;
+	border-left:1px solid #dfe0e0;
 }
 .FineIDTitle {
-    float: left;
-    width:600px;
-    height:61px;
-    border-bottom:1px solid #dfe0e0;
-    padding-left:62px;
+	float: left;
+	width:600px;
+	height:61px;
+	border-bottom:1px solid #dfe0e0;
+	padding-left:62px;
 }
 .FinePwTitle {
-    float: left;
-    width:599px;
-    height:61px;
-    border-bottom:1px solid #dfe0e0;
-    padding-left:62px;
+	float: left;
+	width:599px;
+	height:61px;
+	border-bottom:1px solid #dfe0e0;
+	padding-left:62px;
 }
 .FineIdInfo {
-    position: relative;
-    left:50%;
-    margin-left:-235px;
+	position: relative;
+	left:50%;
+	margin-left:-235px;
 }
 .FineIdInfo>li {
-    float: left;
-    margin-top:15px;
+	float: left;
+	margin-top:15px;
 }
 .FineIdInfo>li:first-child {
-    margin-top:45px;
+	margin-top:45px;
 }

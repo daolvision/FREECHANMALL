@@ -13,331 +13,331 @@
 <script>
 // 상단 슬라이더
 $(document).ready(function(){
-    $('.TopSilde').bxSlider({
-        auto: true,
-        pause: 2500,
-        autoHover: true,
-        slideWidth:322,
-        pager:false,
-        mode: "vertical"
+	$('.TopSilde').bxSlider({
+		auto: true,
+		pause: 2500,
+		autoHover: true,
+		slideWidth:322,
+		pager:false,
+		mode: "vertical"
 
-    });
-    //서브메뉴
-    $('#subMenu .subBtn').on('click', function(e){
-                $('#subMenu').stop().animate({height:600}, 500);
-                $('.subContent').fadeIn();
-            });
-            $('#subMenu').on('mouseleave', function(e){
-                $('#subMenu').stop().animate({height:84}, 500);
-                $('.subContent').fadeOut();
-            });
-    // 맨위로 가기
-    $( window ).scroll( function() {
-        if ( $( this ).scrollTop() > 200 ) {
-            $( '.jcm-top' ).fadeIn();
-        } else {
-            $( '.jcm-top' ).fadeOut();
-        }
-    } );
-    $( '.jcm-top' ).click( function() {
-        $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
-        return false;
-    } );
+	});
+	//서브메뉴
+	$('#subMenu .subBtn').on('click', function(e){
+				$('#subMenu').stop().animate({height:600}, 500);
+				$('.subContent').fadeIn();
+			});
+			$('#subMenu').on('mouseleave', function(e){
+				$('#subMenu').stop().animate({height:84}, 500);
+				$('.subContent').fadeOut();
+			});
+	// 맨위로 가기
+	$( window ).scroll( function() {
+		if ( $( this ).scrollTop() > 200 ) {
+			$( '.jcm-top' ).fadeIn();
+		} else {
+			$( '.jcm-top' ).fadeOut();
+		}
+	} );
+	$( '.jcm-top' ).click( function() {
+		$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+		return false;
+	} );
 });
 </script>
 </head>
 <body>
-    <header>
-        <div class="headerLogo_warp">
-            <div class="headerLogo">
-                <ul class="userMenu floatL">
-                    <li><a href="#"><img src="images/main/HeaderLogo/logo.png"></a></li>
-                    <li class="headerMenuSearch_warp">
-                        <input type="text" placeholder="찬물에도 잘녹는 솝베리 천연 세제  딱 3일만  9,900원 !!">
-                        <a href=""#><i class="fas fa-search"></i></a>
-                    </li>
-                    <li>
-                        <div  class="TopSilde">
-                            <div><a href="#"><img src="images/main/HeaderBanner/TopBnannerOne.jpg" style="width:322px;height:110px"></a></div>
-                            <div><a href="#"><img src="images/main/HeaderBanner/TopBnannerTwo.jpg" style="width:322px;height:110px"></a></div>
-                            <div><a href="#"><img src="images/main/HeaderBanner/TopBnannerThree.jpg" style="width:322px;height:110px"></a></div>
-                            <div><a href="#"><img src="images/main/HeaderBanner/TopBnannerFour.jpg" style="width:322px;height:110px"></a></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <nav class="Menu_warp">
-            <div id="subMenu" class="headerMenu">
-                <ul class="floatL" style="position:relative">
-                    <li class="subBtn"><a href="#"><i class="fas fa-bars"></i>전체 메뉴보기</a></li>
-                    <li class="MenuBar"><a href="#">이벤트</a></li>
-                    <li class="MenuBar"><a href="#">가맹점 신청</a></li>
-                    <li class="MenuBar"><a href="#">고객의소리</a></li>
-                    <li class="MenuBar"><a href="#">공지사항</a></li>
-                    <li class="MenuBar"><a href="#">이용안내</a></li>
-                    <li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/login_off.jpg" onmouseover="this.src='images/main/HeaderMenu/login_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/login_off.jpg'"></a></li>
-                    <li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/cart_off.jpg" onmouseover="this.src='images/main/HeaderMenu/cart_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/cart_off.jpg'"></a></li>
-                    <li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/zzim_off.jpg" onmouseover="this.src='images/main/HeaderMenu/zzim_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/zzim_off.jpg'"></a></li>
-                    <li class="headerMenuMypage">
-                        <a href="#"><img src="images/main/HeaderMenu/my_off.jpg" onmouseover="this.src='images/main/HeaderMenu/my_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/my_off.jpg'"></a>
+	<header>
+		<div class="headerLogo_warp">
+			<div class="headerLogo">
+				<ul class="userMenu floatL">
+					<li><a href="#"><img src="images/main/HeaderLogo/logo.png"></a></li>
+					<li class="headerMenuSearch_warp">
+						<input type="text" placeholder="찬물에도 잘녹는 솝베리 천연 세제  딱 3일만  9,900원 !!">
+						<a href=""#><i class="fas fa-search"></i></a>
+					</li>
+					<li>
+						<div  class="TopSilde">
+							<div><a href="#"><img src="images/main/HeaderBanner/TopBnannerOne.jpg" style="width:322px;height:110px"></a></div>
+							<div><a href="#"><img src="images/main/HeaderBanner/TopBnannerTwo.jpg" style="width:322px;height:110px"></a></div>
+							<div><a href="#"><img src="images/main/HeaderBanner/TopBnannerThree.jpg" style="width:322px;height:110px"></a></div>
+							<div><a href="#"><img src="images/main/HeaderBanner/TopBnannerFour.jpg" style="width:322px;height:110px"></a></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<nav class="Menu_warp">
+			<div id="subMenu" class="headerMenu">
+				<ul class="floatL" style="position:relative">
+					<li class="subBtn"><a href="#"><i class="fas fa-bars"></i>전체 메뉴보기</a></li>
+					<li class="MenuBar"><a href="#">이벤트</a></li>
+					<li class="MenuBar"><a href="#">가맹점 신청</a></li>
+					<li class="MenuBar"><a href="#">고객의소리</a></li>
+					<li class="MenuBar"><a href="#">공지사항</a></li>
+					<li class="MenuBar"><a href="#">이용안내</a></li>
+					<li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/login_off.jpg" onmouseover="this.src='images/main/HeaderMenu/login_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/login_off.jpg'"></a></li>
+					<li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/cart_off.jpg" onmouseover="this.src='images/main/HeaderMenu/cart_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/cart_off.jpg'"></a></li>
+					<li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/zzim_off.jpg" onmouseover="this.src='images/main/HeaderMenu/zzim_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/zzim_off.jpg'"></a></li>
+					<li class="headerMenuMypage">
+						<a href="#"><img src="images/main/HeaderMenu/my_off.jpg" onmouseover="this.src='images/main/HeaderMenu/my_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/my_off.jpg'"></a>
 <!--마이페이지 서브메뉴--> 
-                        <ul class="MypageSubWarp">
-                            <li><a href="#">상품권등록</a></li>
-                            <li><a href="#">상품권 교환내역</a></li>
-                            <li><a href="#">회원탈퇴</a></li>
-                            <li><a href="#">배송/주문조회</a></li>
-                            <li><a href="#">1:1문의게시판</a></li>
-                            <li><a href="#">나의 관심상품</a></li>
-                        </ul>   
-                    </li>
+						<ul class="MypageSubWarp">
+							<li><a href="#">상품권등록</a></li>
+							<li><a href="#">상품권 교환내역</a></li>
+							<li><a href="#">회원탈퇴</a></li>
+							<li><a href="#">배송/주문조회</a></li>
+							<li><a href="#">1:1문의게시판</a></li>
+							<li><a href="#">나의 관심상품</a></li>
+						</ul>   
+					</li>
 <!--서브메뉴 -->   
-                    <li class="subContent">
-                        <ul style="overflow:hidden">
-                            <li class="subContentOne" style="height:250px;">
-                                <p><span class="subMenuTitle">생활용품</span><span class="subContentIcon"><img src="images/main/HeaderMenu/lifeIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>주방용품</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>주방비품</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>청소용품</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>식기류</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>세탁용품</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>화장지 / 생리대</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>구강용품</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>욕실용품</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>생활잡화</span></a>
-                                </p>
-                            </li>
-                            <li class="subContentTwo" style="height:250px;">
-                                <p><span class="subMenuTitle">가구</span><span class="subContentIcon"><img src="images/main/HeaderMenu/furnitureIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>침대</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>책상</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>식탁</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>거실장</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>의자</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>메트리스</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>쇼파</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>티테이블</span></a>
-                                </p>
-                            </li>
-                            <li class="subContentThree" style="height:250px;">
-                                <p><span class="subMenuTitle">뷰티</span><span class="subContentIcon"><img src="images/main/HeaderMenu/beautyIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>미용</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>메이크업</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>향수</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>스킨케어</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>소품</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>남성용품</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>바디&헤어</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>핸드 / 클린징</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>썬크림 / 비비크림</span></a>
-                                </p>
-                            </li>
-                            <li class="subContentFour" style="height:250px;">
-                                <p><span class="subMenuTitle">쥬얼리</span><span class="subContentIcon"><img src="images/main/HeaderMenu/ringIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>반지</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>목걸이</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>발찌</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>귀걸이</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>팔찌</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>브로치</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>시계</span></a>
-                                </p>
-                            </li>
-                            <li class="subContentFive" style="height:250px;">
-                                <p><span class="subMenuTitle">패션의류</span><span class="subContentIcon"><img src="images/main/HeaderMenu/clothingIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>여성의류</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>가방</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>선글라스</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>구두</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>여성핸드백</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>운동화 / 슈즈</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>스포츠의류</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>의류(남여공용)</span></a>
-                                </p>
-                            </li>
-                        </ul>
-                        <ul style="overflow:hidden">
-                            <li class="subContentOne" style="height:200px;">
-                                <p><span class="subMenuTitle">가전</span><span class="subContentIcon"><img src="images/main/HeaderMenu/AppliancesIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>계절가전</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>디지털가전</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>소형가전</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>소품</span></a>
-                                </p>
-                            </li>
-                            <li class="subContentTwo" style="height:200px;">
-                                <p><span class="subMenuTitle">잡화</span><span class="subContentIcon"><img src="images/main/HeaderMenu/stuffIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>여성용잡화</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>남성용잡화</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>스포츠잡화</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>휴대폰용품</span></a>
-                                </p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>기타잡화</span></a>
-                                </p>
-                            </li>
-                            <li class="subContentThree" style="height:200px;">
-                                <p><span class="subMenuTitle">건강관리 용품</span><span class="subContentIcon"><img src="images/main/HeaderMenu/necklaceIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>마사지크림</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>목걸이 / 팔찌</span></a>
-                                </p>
-                            </li>
-                            <li class="subContentFour" style="height:200px;">
-                                <p><span class="subMenuTitle">푸드</span><span class="subContentIcon"><img src="images/main/HeaderMenu/foodIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>건강식품</span></a>
-                                    <span class="subContenline ">|</span>
-                                    <a href="#"><span>기타</span></a>
-                                </p>
-                            </li>
-                            <li class="subContentFive" style="height:200px;">
-                                <p><span class="subMenuTitle">입점대기</span><span class="subContentIcon"><img src="images/main/HeaderMenu/storeIcon.png"></span></p>
-                                <p class="subMenuContent">
-                                    <a href="#"><span>입점준비상품</span></a>
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>             
-            </div>
-        </nav>
-    </header>
-    <main>  
-        <div class="CustomBanner" style="background:url(images/CustomCenter/TopImg.jpg) no-repeat center center;"></div>
-<!--탭 메뉴 -->        
-        <section class="CustomContainerWarp">
-            <section class="TapMenuWarp">
-                <p class="TapMenuTitle">프리첸몰 고객센터<span class="TapMenuSubText">자주하는질문 또는 이용안내를 천천히 읽어 보시고 문의 부탁드립니다</span></p>
-                <ul class="TapBtnWarp">
-                    <li id="btn_CustomNotice" class="CustomMenu CustomMenuActive" onclick="CustomMenu('CustomNotice')"><img src="images/CustomCenter/TapNoticeBtn.png"></li>
-                    <li id="btn_CustomQuestion" class="CustomMenu" onclick="CustomMenu('CustomQuestion')"><img src="images/CustomCenter/TapQusBtn.png"></li>
-                    <li id="btn_CustomAns" class="CustomMenu" onclick="CustomMenu('CustomAns')"><img src="images/CustomCenter/TapAnsBtn.png"></li>
-                    <li id="btn_CustomUse" class="CustomMenu" onclick="CustomMenu('CustomUse')"><img src="images/CustomCenter/TapUseBtn.png"></li>
-                    <li id="btn_CustomInfo" class="CustomMenu" onclick="CustomMenu('CustomInfo')"><img src="images/CustomCenter/TapInfoBtn.png"></li>
-                </ul>
-            </section>
-<!--공지사항 본문 -->    
-            <section class="CustomNoticeRead">
-                <p class="ContentTitle">공지사항</p>
-                <table>
-                        <colgroup>
-                            <col width="20%">
-                            <col width="45%">
-                            <col width="20%">
-                            <col width="15%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <td>작성자</td>
-                                <td>프리첸몰 관리자</td>
-                                <td>작성일</td>
-                                <td>2018/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>제목</td>
-                                <td>프리첸 사칭 및 금품수수행위에 대한 유의사항</td>
-                                <td>조회수</td>
-                                <td>169</td>
-                            </tr>
-                            <tr>
-                                <td colspan="4" style="padding:40px;background:#fff;text-align:left;line-height:40px;">
-                                        프리첸몰을 운영하는 코센페이 주식회사에서는 본 플랫폼에 참여하시는 다양한 사업자(가맹점, 영업지사, 영업대리점, 물품공급업체, 물류업체, 기타 협력업체) 로부터
-                                        일체의 가맹비나 입점비 등을 받지않고 있으며, 본 사업의 취지에 맞도록 홍보 및 지원에 필요한 모든 경제적인 부담을 본사에서 하고 있습니다. 
-                                        각 사업자 분들이 부담하는 비용은 아래와 같이 프리첸 시스템을 운영하는데 필요한 개별 소유 장비와 시스템 구매비용을 실비로 부담하는 것을 원칙으로 하고 있습니다. 
-                                        
-                                        - 아 래 - 
-                                        
-                                        ○ 가맹점 : 상품교환권 발행을 위한 단말기 구매비용은 법규 상 가맹점주에 무상 제공할 수 없기에 본인 부담 원칙(일시구매 또는 장기할부) 
-                                        휴대용 단말기 90,000원, CAT 단말기 216,000원, POS장비는 구매수량 및 사용환경에 따라 계약에 근거 부담 
-                                        
-                                        ○ 상품교환센터 : 상품교환센터 운영규모에 따른 POS장비, 판매관리시스템 구축 비용(공급계약에 근거)은 실비 부담, 
-                                        시스템 유지보수 및 업그레이드는 코센페이에서 부담, 
-                                        교환물품 위탁에 따른 상품보증금(공급계약에 근거) 부담 
-                                        
-                                        상기 항목 이외에 영업권, 상품공급권, 기타 서비스 공급을 대가로 협력업체 또는 관련 사업자에게 보증금 등의 명목으로 일체의 금품을 요구하지 않고 있으며, 
-                                        앞으로도 이러한 본사의 방침은 유지될 것입니다. 
-                                        
-                                        프리첸을 사칭하여 불법적으로 금품 수수등을 요구할 경우 반드시 본사에 확인을 하시어 선의의 피해자가 발생하지 않도록 주의하시기 바랍니다. 
-                                        
-                                        2017년 10월 10일 코센페이 주식회사
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="CustomNoticeReadBtn">리스트</button>
-            </section>
+					<li class="subContent">
+						<ul style="overflow:hidden">
+							<li class="subContentOne" style="height:250px;">
+								<p><span class="subMenuTitle">생활용품</span><span class="subContentIcon"><img src="images/main/HeaderMenu/lifeIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>주방용품</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>주방비품</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>청소용품</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>식기류</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>세탁용품</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>화장지 / 생리대</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>구강용품</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>욕실용품</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>생활잡화</span></a>
+								</p>
+							</li>
+							<li class="subContentTwo" style="height:250px;">
+								<p><span class="subMenuTitle">가구</span><span class="subContentIcon"><img src="images/main/HeaderMenu/furnitureIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>침대</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>책상</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>식탁</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>거실장</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>의자</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>메트리스</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>쇼파</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>티테이블</span></a>
+								</p>
+							</li>
+							<li class="subContentThree" style="height:250px;">
+								<p><span class="subMenuTitle">뷰티</span><span class="subContentIcon"><img src="images/main/HeaderMenu/beautyIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>미용</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>메이크업</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>향수</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>스킨케어</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>소품</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>남성용품</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>바디&헤어</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>핸드 / 클린징</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>썬크림 / 비비크림</span></a>
+								</p>
+							</li>
+							<li class="subContentFour" style="height:250px;">
+								<p><span class="subMenuTitle">쥬얼리</span><span class="subContentIcon"><img src="images/main/HeaderMenu/ringIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>반지</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>목걸이</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>발찌</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>귀걸이</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>팔찌</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>브로치</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>시계</span></a>
+								</p>
+							</li>
+							<li class="subContentFive" style="height:250px;">
+								<p><span class="subMenuTitle">패션의류</span><span class="subContentIcon"><img src="images/main/HeaderMenu/clothingIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>여성의류</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>가방</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>선글라스</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>구두</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>여성핸드백</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>운동화 / 슈즈</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>스포츠의류</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>의류(남여공용)</span></a>
+								</p>
+							</li>
+						</ul>
+						<ul style="overflow:hidden">
+							<li class="subContentOne" style="height:200px;">
+								<p><span class="subMenuTitle">가전</span><span class="subContentIcon"><img src="images/main/HeaderMenu/AppliancesIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>계절가전</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>디지털가전</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>소형가전</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>소품</span></a>
+								</p>
+							</li>
+							<li class="subContentTwo" style="height:200px;">
+								<p><span class="subMenuTitle">잡화</span><span class="subContentIcon"><img src="images/main/HeaderMenu/stuffIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>여성용잡화</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>남성용잡화</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>스포츠잡화</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>휴대폰용품</span></a>
+								</p>
+								<p class="subMenuContent">
+									<a href="#"><span>기타잡화</span></a>
+								</p>
+							</li>
+							<li class="subContentThree" style="height:200px;">
+								<p><span class="subMenuTitle">건강관리 용품</span><span class="subContentIcon"><img src="images/main/HeaderMenu/necklaceIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>마사지크림</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>목걸이 / 팔찌</span></a>
+								</p>
+							</li>
+							<li class="subContentFour" style="height:200px;">
+								<p><span class="subMenuTitle">푸드</span><span class="subContentIcon"><img src="images/main/HeaderMenu/foodIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>건강식품</span></a>
+									<span class="subContenline ">|</span>
+									<a href="#"><span>기타</span></a>
+								</p>
+							</li>
+							<li class="subContentFive" style="height:200px;">
+								<p><span class="subMenuTitle">입점대기</span><span class="subContentIcon"><img src="images/main/HeaderMenu/storeIcon.png"></span></p>
+								<p class="subMenuContent">
+									<a href="#"><span>입점준비상품</span></a>
+								</p>
+							</li>
+						</ul>
+					</li>
+				</ul>			 
+			</div>
+		</nav>
+	</header>
+	<main>  
+		<div class="CustomBanner" style="background:url(images/CustomCenter/TopImg.jpg) no-repeat center center;"></div>
+<!--탭 메뉴 -->		
+		<section class="CustomContainerWarp">
+			<section class="TapMenuWarp">
+				<p class="TapMenuTitle">프리첸몰 고객센터<span class="TapMenuSubText">자주하는질문 또는 이용안내를 천천히 읽어 보시고 문의 부탁드립니다</span></p>
+				<ul class="TapBtnWarp">
+					<li id="btn_CustomNotice" class="CustomMenu CustomMenuActive" onclick="CustomMenu('CustomNotice')"><img src="images/CustomCenter/TapNoticeBtn.png"></li>
+					<li id="btn_CustomQuestion" class="CustomMenu" onclick="CustomMenu('CustomQuestion')"><img src="images/CustomCenter/TapQusBtn.png"></li>
+					<li id="btn_CustomAns" class="CustomMenu" onclick="CustomMenu('CustomAns')"><img src="images/CustomCenter/TapAnsBtn.png"></li>
+					<li id="btn_CustomUse" class="CustomMenu" onclick="CustomMenu('CustomUse')"><img src="images/CustomCenter/TapUseBtn.png"></li>
+					<li id="btn_CustomInfo" class="CustomMenu" onclick="CustomMenu('CustomInfo')"><img src="images/CustomCenter/TapInfoBtn.png"></li>
+				</ul>
+			</section>
+<!--공지사항 본문 -->	
+			<section class="CustomNoticeRead">
+				<p class="ContentTitle">공지사항</p>
+				<table>
+						<colgroup>
+							<col width="20%">
+							<col width="45%">
+							<col width="20%">
+							<col width="15%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>작성자</td>
+								<td>프리첸몰 관리자</td>
+								<td>작성일</td>
+								<td>2018/04/30</td>
+							</tr>
+							<tr>
+								<td>제목</td>
+								<td>프리첸 사칭 및 금품수수행위에 대한 유의사항</td>
+								<td>조회수</td>
+								<td>169</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="padding:40px;background:#fff;text-align:left;line-height:40px;">
+										프리첸몰을 운영하는 코센페이 주식회사에서는 본 플랫폼에 참여하시는 다양한 사업자(가맹점, 영업지사, 영업대리점, 물품공급업체, 물류업체, 기타 협력업체) 로부터
+										일체의 가맹비나 입점비 등을 받지않고 있으며, 본 사업의 취지에 맞도록 홍보 및 지원에 필요한 모든 경제적인 부담을 본사에서 하고 있습니다. 
+										각 사업자 분들이 부담하는 비용은 아래와 같이 프리첸 시스템을 운영하는데 필요한 개별 소유 장비와 시스템 구매비용을 실비로 부담하는 것을 원칙으로 하고 있습니다. 
+										
+										- 아 래 - 
+										
+										○ 가맹점 : 상품교환권 발행을 위한 단말기 구매비용은 법규 상 가맹점주에 무상 제공할 수 없기에 본인 부담 원칙(일시구매 또는 장기할부) 
+										휴대용 단말기 90,000원, CAT 단말기 216,000원, POS장비는 구매수량 및 사용환경에 따라 계약에 근거 부담 
+										
+										○ 상품교환센터 : 상품교환센터 운영규모에 따른 POS장비, 판매관리시스템 구축 비용(공급계약에 근거)은 실비 부담, 
+										시스템 유지보수 및 업그레이드는 코센페이에서 부담, 
+										교환물품 위탁에 따른 상품보증금(공급계약에 근거) 부담 
+										
+										상기 항목 이외에 영업권, 상품공급권, 기타 서비스 공급을 대가로 협력업체 또는 관련 사업자에게 보증금 등의 명목으로 일체의 금품을 요구하지 않고 있으며, 
+										앞으로도 이러한 본사의 방침은 유지될 것입니다. 
+										
+										프리첸을 사칭하여 불법적으로 금품 수수등을 요구할 경우 반드시 본사에 확인을 하시어 선의의 피해자가 발생하지 않도록 주의하시기 바랍니다. 
+										
+										2017년 10월 10일 코센페이 주식회사
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<button class="CustomNoticeReadBtn">리스트</button>
+			</section>
 
-        </section>
-    </main>
+		</section>
+	</main>
 </body>
 </html>

@@ -3,47 +3,47 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
 }
 html, body {
-    font-family: 'Noto Sans KR',"나눔고딕","NanumGothic",Malgun Gothic,"맑은 고딕",AppleGothic,Dotum,"돋움",sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    width:100%;
-    height:auto;
+	font-family: 'Noto Sans KR',"나눔고딕","NanumGothic",Malgun Gothic,"맑은 고딕",AppleGothic,Dotum,"돋움",sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	width:100%;
+	height:auto;
 }
 header, section, nav, article, footer { 
-    display:block;
+	display:block;
 }
 a:link {
-    display:block;
-    cursor: pointer;
-    text-decoration: none;
-    box-sizing: border-box;
-    width:100%;
-    height:100%
+	display:block;
+	cursor: pointer;
+	text-decoration: none;
+	box-sizing: border-box;
+	width:100%;
+	height:100%
 }
 ul, ol, li, dl, dt, dd {
-    list-style: none;
+	list-style: none;
 }
 table {
   border-collapse:collapse;
 }
 .floatL {
-    clear: both;
+	clear: both;
   }
 
   /* 헤더 - 로고 */
 .headerLogo_warp {
-    background:#6ebbfc;
+	background:#6ebbfc;
 }
 .headerLogo {
-    width:1200px;
-    height:110px;
-    margin:0 auto;
+	width:1200px;
+	height:110px;
+	margin:0 auto;
 }
 .headerLogo>ul {
   float: left;
@@ -299,70 +299,70 @@ table {
 /* footer*/
 
 .footer_warp {
-    width:100%;
-    height:380px;
-    background: #474849;
+	width:100%;
+	height:380px;
+	background: #474849;
 }
 .footerContent {
-    position: relative;
-    width:1200px;
-    top:0;
-    left:50%;
-    margin-left:-600px;
+	position: relative;
+	width:1200px;
+	top:0;
+	left:50%;
+	margin-left:-600px;
 }
 .footerLogo {
-    float: left;
-    width:350px;
-    padding-top:150px;
+	float: left;
+	width:350px;
+	padding-top:150px;
 }
 .footerInfo {
-    float: left;
-    margin:55px 0px 26px 0px;
+	float: left;
+	margin:55px 0px 26px 0px;
 }
 .footerInfo>li a {
-    display: block;
-    width:100%;
-    height:100%;
-    color:#f0efef;
-    font-size:13px;
-    font-weight:300;
+	display: block;
+	width:100%;
+	height:100%;
+	color:#f0efef;
+	font-size:13px;
+	font-weight:300;
 }
 .footerInfo>li a:hover {
-    color:#fff;
+	color:#fff;
 }
 .footerInfo li {
-    float: left;
-    background: #393a3b;
-    border:1px solid #f0efef;
-    padding:8px 22px;
-    margin-left:8px;
+	float: left;
+	background: #393a3b;
+	border:1px solid #f0efef;
+	padding:8px 22px;
+	margin-left:8px;
 }
 .footerInfoAddress {
-    color:#f0efef;
-    font-size:12px;
-    font-weight:300;
-    letter-spacing: 1px;
+	color:#f0efef;
+	font-size:12px;
+	font-weight:300;
+	letter-spacing: 1px;
 }
 .footerInfoCustom {
-    color:#f0efef;
-    font-size:25.5px;
-    font-weight:500;
-    letter-spacing: -0.05px;
-    margin-top: 38px;
+	color:#f0efef;
+	font-size:25.5px;
+	font-weight:500;
+	letter-spacing: -0.05px;
+	margin-top: 38px;
 }
 .footerInfoTel {
-    color:#f0efef;
-    font-size:39px;
-    font-weight:600;
-    letter-spacing: -0.05px;
-    line-height: 40px;
+	color:#f0efef;
+	font-size:39px;
+	font-weight:600;
+	letter-spacing: -0.05px;
+	line-height: 40px;
 }
 .footerInfoCustomTime {
-    color:#f0efef;
-    font-size:15px;
-    font-weight:300;
-    letter-spacing: -0.05px;
-    line-height: 40px;
+	color:#f0efef;
+	font-size:15px;
+	font-weight:300;
+	letter-spacing: -0.05px;
+	line-height: 40px;
 }
 
 /* 위로가기 */ 
@@ -377,12 +377,12 @@ a.jcm-top {
   box-sizing: border-box;
 }
   @media ( max-width:1800px) {
-    a.jcm-top {
-      right:50px;
-    }
+	a.jcm-top {
+	  right:50px;
+	}
   }
   @media ( max-width:1280px) {
-    a.jcm-top {
-      display: none;
-    }
+	a.jcm-top {
+	  display: none;
+	}
   }
