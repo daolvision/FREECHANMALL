@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="/WEB-INF/daol.tld" prefix="daol"%>
+<html>
 <head>
-<title>메인페이지</title>
-<meta charset="utf-8">
-
-<link rel="stylesheet" href="font/css/fontawesome-all.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/Main.css">
-<link rel="stylesheet" href="css/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Brand Management</title>
+<!-- COMMON JAVASCRIPT, CSS 레이어 -->
+<jsp:include page="../inc/WebImportLayer.jsp"></jsp:include>
+<!-- OPTIONAL JAVASCRIPT, CSS START -->
+<link rel="stylesheet" href="/resources/css/Main.css">
+<link rel="stylesheet" href="/resources/css/jquery.bxslider.css">
+<script src="/resources/js/jquery.bxslider.min.js"></script>
+<!-- OPTIONAL JAVASCRIPT, CSS END -->
+<script type="text/javascript">
 // 상단 슬라이더
 $(document).ready(function(){
 	$('.slider').bxSlider({
@@ -65,17 +69,17 @@ $(document).ready(function(){
 		<div class="headerLogo_warp">
 			<div class="headerLogo">
 				<ul class="userMenu floatL">
-					<li><a href="#"><img src="images/main/HeaderLogo/logo.png"></a></li>
+					<li><a href="#"><img src="/resources/images/main/HeaderLogo/logo.png"></a></li>
 					<li class="headerMenuSearch_warp">
 						<input type="text" placeholder="찬물에도 잘녹는 솝베리 천연 세제  딱 3일만  9,900원 !!">
 						<a href=""#><i class="fas fa-search"></i></a>
 					</li>
 					<li>
 						<div  class="TopSilde">
-							<div><a href="#"><img src="images/main/HeaderBanner/TopBnannerOne.jpg" style="width:322px;height:110px"></a></div>
-							<div><a href="#"><img src="images/main/HeaderBanner/TopBnannerTwo.jpg" style="width:322px;height:110px"></a></div>
-							<div><a href="#"><img src="images/main/HeaderBanner/TopBnannerThree.jpg" style="width:322px;height:110px"></a></div>
-							<div><a href="#"><img src="images/main/HeaderBanner/TopBnannerFour.jpg" style="width:322px;height:110px"></a></div>
+							<div><a href="#"><img src="/resources/images/main/HeaderBanner/TopBnannerOne.jpg" style="width:322px;height:110px"></a></div>
+							<div><a href="#"><img src="/resources/images/main/HeaderBanner/TopBnannerTwo.jpg" style="width:322px;height:110px"></a></div>
+							<div><a href="#"><img src="/resources/images/main/HeaderBanner/TopBnannerThree.jpg" style="width:322px;height:110px"></a></div>
+							<div><a href="#"><img src="/resources/images/main/HeaderBanner/TopBnannerFour.jpg" style="width:322px;height:110px"></a></div>
 						</div>
 					</li>
 				</ul>
@@ -91,12 +95,12 @@ $(document).ready(function(){
 					<li class="MenuBar"><a href="#">공지사항</a></li>
 					<li class="MenuBar"><a href="#">이용안내</a></li>
 						<ul class="headerMenuInfo">
-							<li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/login_off.jpg" onmouseover="this.src='images/main/HeaderMenu/login_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/login_off.jpg'"></a></li>
-							<li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/cart_off.jpg" onmouseover="this.src='images/main/HeaderMenu/cart_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/cart_off.jpg'"></a></li>
-							<li class="headerMenuUserInfo"><a href="#"><img src="images/main/HeaderMenu/zzim_off.jpg" onmouseover="this.src='images/main/HeaderMenu/zzim_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/zzim_off.jpg'"></a></li>
+							<li class="headerMenuUserInfo"><a href="#"><img src="/resources/images/main/HeaderMenu/login_off.jpg" onmouseover="this.src='/resources/images/main/HeaderMenu/login_on.jpg'" onmouseout="this.src='/resources/images/main/HeaderMenu/login_off.jpg'"></a></li>
+							<li class="headerMenuUserInfo"><a href="#"><img src="/resources/images/main/HeaderMenu/cart_off.jpg" onmouseover="this.src='/resources/images/main/HeaderMenu/cart_on.jpg'" onmouseout="this.src='/resources/images/main/HeaderMenu/cart_off.jpg'"></a></li>
+							<li class="headerMenuUserInfo"><a href="#"><img src="/resources/images/main/HeaderMenu/zzim_off.jpg" onmouseover="this.src='/resources/images/main/HeaderMenu/zzim_on.jpg'" onmouseout="this.src='/resources/images/main/HeaderMenu/zzim_off.jpg'"></a></li>
 							<li class="headerMenuMypage">
-								<a href="#"><img src="images/main/HeaderMenu/my_off.jpg" onmouseover="this.src='images/main/HeaderMenu/my_on.jpg'" onmouseout="this.src='images/main/HeaderMenu/my_off.jpg'"></a>
-		<!--마이페이지 서브메뉴--> 
+								<a href="#"><img src="/resources/images/main/HeaderMenu/my_off.jpg" onmouseover="this.src='/resources/images/main/HeaderMenu/my_on.jpg'" onmouseout="this.src='/resources/images/main/HeaderMenu/my_off.jpg'"></a>
+								<!--마이페이지 서브메뉴--> 
 								<ul class="MypageSubWarp">
 									<li><a href="#">상품권등록</a></li>
 									<li><a href="#">상품권 교환내역</a></li>
@@ -107,11 +111,11 @@ $(document).ready(function(){
 								</ul>   
 							</li>
 						</ul>
-	<!--서브메뉴 -->   
+						<!--서브메뉴 -->   
 						<li class="subContent">
 							<ul style="overflow:hidden">
 								<li class="subContentOne" style="height:250px;">
-									<p><span class="subMenuTitle">생활용품</span><span class="subContentIcon"><img src="images/main/HeaderMenu/lifeIcon.png"></span></p>
+									<p><span class="subMenuTitle">생활용품</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/lifeIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>주방용품</span></a>
 										<span class="subContenline ">|</span>
@@ -137,7 +141,7 @@ $(document).ready(function(){
 									</p>
 								</li>
 								<li class="subContentTwo" style="height:250px;">
-									<p><span class="subMenuTitle">가구</span><span class="subContentIcon"><img src="images/main/HeaderMenu/furnitureIcon.png"></span></p>
+									<p><span class="subMenuTitle">가구</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/furnitureIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>침대</span></a>
 										<span class="subContenline ">|</span>
@@ -160,7 +164,7 @@ $(document).ready(function(){
 									</p>
 								</li>
 								<li class="subContentThree" style="height:250px;">
-									<p><span class="subMenuTitle">뷰티</span><span class="subContentIcon"><img src="images/main/HeaderMenu/beautyIcon.png"></span></p>
+									<p><span class="subMenuTitle">뷰티</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/beautyIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>미용</span></a>
 										<span class="subContenline ">|</span>
@@ -186,7 +190,7 @@ $(document).ready(function(){
 									</p>
 								</li>
 								<li class="subContentFour" style="height:250px;">
-									<p><span class="subMenuTitle">쥬얼리</span><span class="subContentIcon"><img src="images/main/HeaderMenu/ringIcon.png"></span></p>
+									<p><span class="subMenuTitle">쥬얼리</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/ringIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>반지</span></a>
 										<span class="subContenline ">|</span>
@@ -207,7 +211,7 @@ $(document).ready(function(){
 									</p>
 								</li>
 								<li class="subContentFive" style="height:250px;">
-									<p><span class="subMenuTitle">패션의류</span><span class="subContentIcon"><img src="images/main/HeaderMenu/clothingIcon.png"></span></p>
+									<p><span class="subMenuTitle">패션의류</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/clothingIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>여성의류</span></a>
 										<span class="subContenline ">|</span>
@@ -232,7 +236,7 @@ $(document).ready(function(){
 							</ul>
 							<ul style="overflow:hidden">
 								<li class="subContentOne" style="height:200px;">
-									<p><span class="subMenuTitle">가전</span><span class="subContentIcon"><img src="images/main/HeaderMenu/AppliancesIcon.png"></span></p>
+									<p><span class="subMenuTitle">가전</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/AppliancesIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>계절가전</span></a>
 										<span class="subContenline ">|</span>
@@ -245,7 +249,7 @@ $(document).ready(function(){
 									</p>
 								</li>
 								<li class="subContentTwo" style="height:200px;">
-									<p><span class="subMenuTitle">잡화</span><span class="subContentIcon"><img src="images/main/HeaderMenu/stuffIcon.png"></span></p>
+									<p><span class="subMenuTitle">잡화</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/stuffIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>여성용잡화</span></a>
 										<span class="subContenline ">|</span>
@@ -261,7 +265,7 @@ $(document).ready(function(){
 									</p>
 								</li>
 								<li class="subContentThree" style="height:200px;">
-									<p><span class="subMenuTitle">건강관리 용품</span><span class="subContentIcon"><img src="images/main/HeaderMenu/necklaceIcon.png"></span></p>
+									<p><span class="subMenuTitle">건강관리 용품</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/necklaceIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>마사지크림</span></a>
 										<span class="subContenline ">|</span>
@@ -269,7 +273,7 @@ $(document).ready(function(){
 									</p>
 								</li>
 								<li class="subContentFour" style="height:200px;">
-									<p><span class="subMenuTitle">푸드</span><span class="subContentIcon"><img src="images/main/HeaderMenu/foodIcon.png"></span></p>
+									<p><span class="subMenuTitle">푸드</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/foodIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>건강식품</span></a>
 										<span class="subContenline ">|</span>
@@ -277,7 +281,7 @@ $(document).ready(function(){
 									</p>
 								</li>
 								<li class="subContentFive" style="height:200px;">
-									<p><span class="subMenuTitle">입점대기</span><span class="subContentIcon"><img src="images/main/HeaderMenu/storeIcon.png"></span></p>
+									<p><span class="subMenuTitle">입점대기</span><span class="subContentIcon"><img src="/resources/images/main/HeaderMenu/storeIcon.png"></span></p>
 									<p class="subMenuContent">
 										<a href="#"><span>입점준비상품</span></a>
 									</p>
@@ -291,82 +295,81 @@ $(document).ready(function(){
 	<main>  
 <!--메인 슬라이드 -->
 		<div class="slider">
-			<div style="height:450px;background:url(images/main/Slide/Slide_01.jpg)no-repeat center center"><a href="#"></a></div>
-			<div style="height:450px;background:url(images/main/Slide/Slide_02.jpg)no-repeat center center"><a href="#"></a></div>
-			<div style="height:450px;background:url(images/main/Slide/Slide_03.jpg)no-repeat center center"><a href="#"></a></div>
-			<div style="height:450px;background:url(images/main/Slide/Slide_04.jpg)no-repeat center center"><a href="#"></a></div>
+			<div style="height:450px;background:url(/resources/images/main/Slide/Slide_01.jpg)no-repeat center center"><a href="#"></a></div>
+			<div style="height:450px;background:url(/resources/images/main/Slide/Slide_02.jpg)no-repeat center center"><a href="#"></a></div>
+			<div style="height:450px;background:url(/resources/images/main/Slide/Slide_03.jpg)no-repeat center center"><a href="#"></a></div>
+			<div style="height:450px;background:url(/resources/images/main/Slide/Slide_04.jpg)no-repeat center center"><a href="#"></a></div>
 		</div>
-<!-- 추천상품 -->   
+		<!-- 추천상품 -->   
 		<section class="container_warp">  <!-- 본문중 가로 1200px 컨텐츠 묶음 블럭 -->
 			<aside class="jcm-top hidden-xs hidden-sm">
-				<a href="#" class="jcm-top hidden-xs hidden-sm"><img src="images/main/Top/arrow-circle-up.svg"></a>
+				<a href="#" class="jcm-top hidden-xs hidden-sm"><img src="/resources/images/main/Top/arrow-circle-up.svg"></a>
 			</aside>
 			<section class="Recommend_warp">
 				<p>이달의 <span>추천상품</span><span>다른 고객님께 많이 추천된 상품을 확인하세요 !</span></p>
 				<ul class="RecommendProduct floatL">
-					<li style="background: url(images/main/ContentRecommend/productOne.jpg) no-repeat;"><a href="#"></a></li>
-					<li style="background: url(images/main/ContentRecommend/productTwo.jpg) no-repeat;"><a href="#"></a></li>
-					<li style="background: url(images/main/ContentRecommend/productThree.jpg) no-repeat;"><a href="#"></a></li>
-					<li style="background: url(images/main/ContentRecommend/productFour.jpg) no-repeat;"><a href="#"></a></li>
-					<li style="background: url(images/main/ContentRecommend/productFive.jpg) no-repeat;"><a href="#"></a></li>
-					<li style="background: url(images/main/ContentRecommend/productSix.jpg) no-repeat;"><a href="#"></a></li>
+					<li style="background: url(/resources/images/main/ContentRecommend/productOne.jpg) no-repeat;"><a href="#"></a></li>
+					<li style="background: url(/resources/images/main/ContentRecommend/productTwo.jpg) no-repeat;"><a href="#"></a></li>
+					<li style="background: url(/resources/images/main/ContentRecommend/productThree.jpg) no-repeat;"><a href="#"></a></li>
+					<li style="background: url(/resources/images/main/ContentRecommend/productFour.jpg) no-repeat;"><a href="#"></a></li>
+					<li style="background: url(/resources/images/main/ContentRecommend/productFive.jpg) no-repeat;"><a href="#"></a></li>
+					<li style="background: url(/resources/images/main/ContentRecommend/productSix.jpg) no-repeat;"><a href="#"></a></li>
 				</ul>
 			</section>
-<!-- 서클 슬라이드 -->		 
+			<!-- 서클 슬라이드 -->
 			<section class="CircleSlide_warp">
 				<div class="CircleSlide">
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgOne.jpg" style="width:187px;height:230px"></a></div>
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgTwo.jpg" style="width:187px;height:230px"></a></div>
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgThree.jpg" style="width:187px;height:230px"></a></div>
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgFour.jpg" style="width:187px;height:230px"></a></div>
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgFive.jpg" style="width:187px;height:230px"></a></div>
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgSix.jpg" style="width:187px;height:230px"></a></div>
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgSeven.jpg" style="width:187px;height:230px"></a></div>
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgEight.jpg" style="width:187px;height:230px"></a></div>
-					<div><a href="#"><img src="images/main/ContentCircleSlide/CircleImgNine.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgOne.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgTwo.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgThree.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgFour.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgFive.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgSix.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgSeven.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgEight.jpg" style="width:187px;height:230px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentCircleSlide/CircleImgNine.jpg" style="width:187px;height:230px"></a></div>
 				</div>
 			</section>
- <!-- 인기상품 -->
+			<!-- 인기상품 -->
 			<section class="Best_warp">
 				<p>이달의 <span>인기상품</span><span>가장 많이 팔린 상품을 확인하세요 !</span></p>
 				<div class="BestContent_left">
 					<ul class="BestProduct_left">
-						<li><a href="#"><img src="images/main/ContentBest/productOne.jpg"></a><p class="saleIcon"></p></li>
-						<li><a href="#"><img src="images/main/ContentBest/productTwo.jpg"></a><p class="saleIcon"></p></li>
-						<li><a href="#"><img src="images/main/ContentBest/productThree.jpg"></a></li>
+						<li><a href="#"><img src="/resources/images/main/ContentBest/productOne.jpg"></a><p class="saleIcon"></p></li>
+						<li><a href="#"><img src="/resources/images/main/ContentBest/productTwo.jpg"></a><p class="saleIcon"></p></li>
+						<li><a href="#"><img src="/resources/images/main/ContentBest/productThree.jpg"></a></li>
 					</ul>
 				</div>
 				<div class="BestContent_right">
 					<ul class="BestProduct_right floatL">
 						<li>
 							<ul class="BestProduct_right_circle floatL">
-								<li><a href="#"><img src="images/main/ContentBest/productFour.jpg"></a><p class="saleIcon"></p></li>
-								<li><a href="#"><img src="images/main/ContentBest/productFive.jpg"></a><p class="saleIcon"></p></li>
+								<li><a href="#"><img src="/resources/images/main/ContentBest/productFour.jpg"></a><p class="saleIcon"></p></li>
+								<li><a href="#"><img src="/resources/images/main/ContentBest/productFive.jpg"></a><p class="saleIcon"></p></li>
 							</ul>
 						</li>
-						<li><a href="#"><img src="images/main/ContentBest/productSeven.jpg"></a><p class="saleIcon"></p></li>
-						<li><a href="#"><img src="images/main/ContentBest/produtEight.jpg"></a><p class="saleIcon"></p></li>
+						<li><a href="#"><img src="/resources/images/main/ContentBest/productSeven.jpg"></a><p class="saleIcon"></p></li>
+						<li><a href="#"><img src="/resources/images/main/ContentBest/produtEight.jpg"></a><p class="saleIcon"></p></li>
 					</ul>
 				</div>
 			</section>
- <!-- 중간 슬라이드 -->	 
+			<!-- 중간 슬라이드 -->	 
 			<section class="SubSlide_warp">
 				<div class="slider">
-					<div><a href="#"><img src="images/main/ContentSubSlide/SlideImgOne.jpg" style="width:1200px;height:294px"></a></div>
-					<div><a href="#"><img src="images/main/ContentSubSlide/SlideImgTwo.jpg" style="width:1200px;height:294px"></a></div>
-					<div><a href="#"><img src="images/main/ContentSubSlide/SlideImgThree.jpg" style="width:1200px;height:294px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentSubSlide/SlideImgOne.jpg" style="width:1200px;height:294px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentSubSlide/SlideImgTwo.jpg" style="width:1200px;height:294px"></a></div>
+					<div><a href="#"><img src="/resources/images/main/ContentSubSlide/SlideImgThree.jpg" style="width:1200px;height:294px"></a></div>
 				</div>
 			</section>
 			<section class="AllItems_warp">
-			   <p>이달의 <span>전체상품</span><span>가장 많이 팔린 상품을 확인하세요 !</span></p>
-			   <div class="AllItems_content">
- <!-- 전체상품 리스트 -->   
-
+				<p>이달의 <span>전체상품</span><span>가장 많이 팔린 상품을 확인하세요 !</span></p>
+				<div class="AllItems_content">
+					<!-- 전체상품 리스트 -->   
 					<div class="ProductList">
 						<p class="saleIcon"></p>
 						<ul class="AllItems_product">
 							<a href="#">
-								<li class="AllItems_list_img"><img src="images/main/ContentAllIteam/list_img.jpg"></li>
+								<li class="AllItems_list_img"><img src="/resources/images/main/ContentAllIteam/list_img.jpg"></li>
 								<li>MEROL ME-712S 전자동 에스프레소머신</li>
 							</a>
 								<li>215,000원</li>
@@ -385,7 +388,7 @@ $(document).ready(function(){
 						<p class="saleIcon"></p>
 						<ul class="AllItems_product">
 							<a href="#">
-								<li class="AllItems_list_img"><img src="images/main/ContentAllIteam/list_img.jpg"></li>
+								<li class="AllItems_list_img"><img src="/resources/images/main/ContentAllIteam/list_img.jpg"></li>
 								<li>MEROL ME-712S 전자동 에스프레소머신 초특가 세일중</li>
 							</a>
 								<li>215,000원</li>
@@ -404,7 +407,7 @@ $(document).ready(function(){
 						<p class="saleIcon"></p>
 						<ul class="AllItems_product">
 							<a href="#">
-								<li class="AllItems_list_img"><img src="images/main/ContentAllIteam/list_img.jpg"></li>
+								<li class="AllItems_list_img"><img src="/resources/images/main/ContentAllIteam/list_img.jpg"></li>
 								<li>MEROL ME-712S 전자동 에스프레소머신 초특가 세일중</li>
 							</a>
 								<li>215,000원</li>
@@ -423,7 +426,7 @@ $(document).ready(function(){
 						<p class="saleIcon"></p>
 						<ul class="AllItems_product">
 							<a href="#">
-								<li class="AllItems_list_img"><img src="images/main/ContentAllIteam/list_img.jpg"></li>
+								<li class="AllItems_list_img"><img src="/resources/images/main/ContentAllIteam/list_img.jpg"></li>
 								<li>MEROL ME-712S 전자동 에스프레소머신 초특가 세일중</li>
 							</a>
 								<li>215,000원</li>
@@ -442,7 +445,7 @@ $(document).ready(function(){
 						<p class="saleIcon"></p>
 						<ul class="AllItems_product">
 							<a href="#">
-								<li class="AllItems_list_img"><img src="images/main/ContentAllIteam/list_img.jpg"></li>
+								<li class="AllItems_list_img"><img src="/resources/images/main/ContentAllIteam/list_img.jpg"></li>
 								<li>MEROL ME-712S 전자동 에스프레소머신 초특가 세일중</li>
 							</a>
 								<li>215,000원</li>
@@ -457,20 +460,18 @@ $(document).ready(function(){
 							<p class="ListZzim_icon"><a href="#"></a></p>
 						</ul>
 					</div> 
-
-					
 				</div>
 			</section>
 		</section>	 <!-- 본문중 가로 1200px 컨텐츠 묶음 블럭 끝 -->
- <!-- 프리첸 배너 -->	 
+		 <!-- 프리첸 배너 -->	 
 		<section class="Freechan_warp">
-			<div class="FreechanBanner"><a href="#"><img src="images/main/ContentFreechan/FreechanBanner.jpg"></a></div>
+			<div class="FreechanBanner"><a href="#"><img src="/resources/images/main/ContentFreechan/FreechanBanner.jpg"></a></div>
 		</section>
 	</main>
-<!-- footer -->	 
+	<!-- footer -->	 
 	<section class="footer_warp">
 		<div class="footerContent">
-			<div class="footerLogo"><img src="images/main/Footer/footerLogo.jpg" style="padding-left:80px"></div>
+			<div class="footerLogo"><img src="/resources/images/main/Footer/footerLogo.jpg" style="padding-left:80px"></div>
 			<div style="float:left;">
 				<ul>
 					<li style="overflow: hidden;">
